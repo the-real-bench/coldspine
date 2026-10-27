@@ -1,0 +1,24 @@
+name: tests
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  headless:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Godot
+        run: |
+          curl -sSL -o godot.zip https://github.com/godotengine/godot/releases/download/4.6.1-stable/Godot_v4.6.1-stable_linux.x86_64.zip
+          unzip -q godot.zip && mv Godot_v4.6.1-stable_linux.x86_64 /usr/local/bin/godot
+      - name: Import
+        run: godot --headless --path . --import || true
+      - name: Run all suites
+        run: |
+          red=0
+          for s in run_tests $(ls tests/*_smoke.gd | xargs -n1 basename | sed 's/\.gd$//' | sort); do
+            if godot --headless --path . --script "res://tests/$s.gd" > "out_$s.txt" 2>&1; then
+              echo "green $s: $(grep -E 'passed' "out_$s.txt" | tail -1)"
+            else
+              echo "RED   $s"; tail -20 "out_$s.txt"; red=1
+            fi
+          done
+          exit $red

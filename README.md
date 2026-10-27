@@ -1,5 +1,7 @@
 # COLDSPINE
 
+[![tests](https://github.com/the-real-bench/coldspine/actions/workflows/tests.yml/badge.svg)](https://github.com/the-real-bench/coldspine/actions/workflows/tests.yml)
+
 A physics-first, turn-based tactical roguelite set on an armored train circling a frozen world. You command a small squad car by car toward the engine. Guns are unreliable; the real weapons are **shoves, slams, throws, floods and electrified water**. Every physics move is deterministic and previewed before you commit, so what you see is exactly what happens.
 
 Fully playable start to finish. Final textures and audio are placeholders.
@@ -36,5 +38,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md). The short version:
 Design specs are in `docs/`: the game design document plus sub-specs for the physics resolver, hazards, roster, set-piece cars and the finale.
 
 ## License
+
+History was squashed into a single commit for the public release.
 
 Copyright © ptbench Studios. All rights reserved. The code is public to read; no license is granted to copy, modify or distribute it.
