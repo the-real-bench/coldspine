@@ -1,0 +1,15 @@
+{
+  "id": "firebrand",
+  "name": "Firebrand",
+  "role": "momentum",
+  "baseStats": { "hp": 8, "move": 5, "accuracy": 65, "mass": "light" },
+  "innateTrait": "momentum",
+  "startingAbilities": ["lunge", "rally"],
+  "abilityTree": [
+    ["zeal", "reckless_ability"],
+    ["inspire", "martyrs_wake"],
+    ["warcry", "overrun"]
+  ],
+  "capstone": "vanguard",
+  "traitAffinity": ["inspiring", "bloodthirsty", "frail_veteran", "reckless"]
+}

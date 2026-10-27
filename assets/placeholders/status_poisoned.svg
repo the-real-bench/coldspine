@@ -1,0 +1,10 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- POISONED (S_POISONED) #7FBF3F — trefoil biohazard -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#7FBF3F" stroke="#0B0E11" stroke-width="2"/>
+  <g fill="#F2F4F6" stroke="#0B0E11" stroke-width="0.8">
+    <circle cx="12" cy="7" r="3"/>
+    <circle cx="7.5" cy="15" r="3"/>
+    <circle cx="16.5" cy="15" r="3"/>
+  </g>
+  <circle cx="12" cy="12.5" r="2.2" fill="#7FBF3F" stroke="#0B0E11" stroke-width="0.8"/>
+</svg>

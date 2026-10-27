@@ -1,0 +1,73 @@
+{
+  "_schema": "Section Captains (elite gates) + the Conductor finale. Each carries a unique physics 'key' (physicsTrait).",
+  "enemies": [
+    {
+      "id": "captain_tail_warden",
+      "name": "The Tail Warden",
+      "tier": 1,
+      "section": 1,
+      "stats": { "hp": 16, "move": 4, "accuracy": 60, "mass": "heavy" },
+      "physicsTrait": "unshovable_until_soaked",
+      "physicsKey": "unshovable_until_soaked",
+      "abilities": ["captain_slam", "buff_guards"],
+      "aiProfile": "melee_rush"
+    },
+    {
+      "id": "captain_foreman",
+      "name": "The Foreman",
+      "tier": 2,
+      "section": 2,
+      "stats": { "hp": 18, "move": 3, "accuracy": 60, "mass": "heavy" },
+      "physicsTrait": "buffs_nearby_guards",
+      "physicsKey": "kill_to_drop_guard_buff",
+      "abilities": ["buff_guards", "captain_slam"],
+      "aiProfile": "support"
+    },
+    {
+      "id": "captain_gardener",
+      "name": "The Head Gardener",
+      "tier": 3,
+      "section": 3,
+      "stats": { "hp": 18, "move": 4, "accuracy": 65, "mass": "medium" },
+      "physicsTrait": "immune_until_gas_cleared",
+      "physicsKey": "gas_shroud_must_be_dispersed",
+      "abilities": ["gas_grenade", "summon_hounds"],
+      "aiProfile": "ranged_hold"
+    },
+    {
+      "id": "captain_majordomo",
+      "name": "The Majordomo",
+      "tier": 4,
+      "section": 4,
+      "stats": { "hp": 20, "move": 4, "accuracy": 70, "mass": "medium" },
+      "physicsTrait": "shielded_until_cover_stripped",
+      "physicsKey": "destroy_his_cover_then_flank",
+      "abilities": ["shield_wall", "marking_call", "enforcer_volley"],
+      "aiProfile": "ranged_hold"
+    },
+    {
+      "id": "captain_chief_of_security",
+      "name": "Chief of Security",
+      "tier": 5,
+      "section": 5,
+      "stats": { "hp": 22, "move": 4, "accuracy": 70, "mass": "heavy" },
+      "physicsTrait": "unshovable_until_soaked",
+      "physicsKey": "soak_then_into_a_trap",
+      "abilities": ["captain_slam", "deploy_bot", "buff_guards"],
+      "aiProfile": "robot"
+    },
+    {
+      "id": "the_conductor",
+      "name": "The Conductor",
+      "tier": 5,
+      "section": 5,
+      "stats": { "hp": 14, "move": 3, "accuracy": 70, "mass": "light" },
+      "physicsTrait": "unshovable_until_soaked",
+      "physicsKey": "flood_the_dais_then_shove_into_a_hazard",
+      "abilities": ["re_route", "deploy", "overcharge", "accelerate", "lockdown"],
+      "aiProfile": "support",
+      "isFinaleBoss": true,
+      "note": "Driven by AIPatternController (Sub-Spec B3.3); shielded by online Relays, fragile body."
+    }
+  ]
+}

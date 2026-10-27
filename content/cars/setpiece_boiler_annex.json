@@ -1,0 +1,44 @@
+{
+  "id": "setpiece_boiler_annex",
+  "name": "Boiler / Engine Annex",
+  "type": "combat",
+  "section": 4,
+  "reconTell": "BOILER",
+  "reconTags": ["STEAM", "PISTONS", "FURNACE"],
+  "gridSize": { "w": 16, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 4 },
+      { "object": "locker", "x": 8, "y": 6 }
+    ],
+    "objects": [
+      { "object": "coolant_tank", "x": 6, "y": 2 }
+    ],
+    "hazards": [
+      { "hazard": "furnace", "at": { "x": 13, "y": 2 } },
+      { "hazard": "furnace", "at": { "x": 13, "y": 7 } },
+      { "hazard": "piston", "at": { "x": 9, "y": 3 }, "lane": [1, 0] },
+      { "hazard": "piston", "at": { "x": 9, "y": 6 }, "lane": [1, 0] },
+      { "hazard": "steam_vent", "at": { "x": 11, "y": 4 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 12, "y": 4 }, { "x": 12, "y": 5 }, { "x": 11, "y": 8 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "security_robot", "at": { "x": 12, "y": 4 } },
+    { "enemy": "enforcer", "at": { "x": 12, "y": 5 } },
+    { "enemy": "truncheon_guard", "at": { "x": 11, "y": 8 } }
+  ],
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["steam_vents", "furnace_row", "lockdown"],
+  "designNote": "Industrial hazard-dense combat bridging toward the Engine. Shove enemies/robots into piston lanes and furnaces. Reuses finale hazard kit at lower stakes."
+}

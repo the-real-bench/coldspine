@@ -1,0 +1,10 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- SUPPRESSED (S_SUPPRESSED) #B07A2E — two downward pinning arrows -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#B07A2E" stroke="#0B0E11" stroke-width="2"/>
+  <g fill="#F2F4F6" stroke="#0B0E11" stroke-width="0.8">
+    <polygon points="8,4 8,12 5,12 9,18 13,12 10,12 10,4"/>
+  </g>
+  <g fill="#F2F4F6" stroke="#0B0E11" stroke-width="0.8" opacity="0.85">
+    <polygon points="15,7 15,12 13,12 16,17 19,12 17,12 17,7"/>
+  </g>
+</svg>

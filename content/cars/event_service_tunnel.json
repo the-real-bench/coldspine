@@ -1,0 +1,83 @@
+{
+  "id": "event_service_tunnel",
+  "name": "Service Tunnel",
+  "type": "event",
+  "section": 3,
+  "gridSize": {
+    "w": 12,
+    "h": 8
+  },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      }
+    ],
+    "cover": [],
+    "objects": [
+      {
+        "object": "junction_box",
+        "x": 6,
+        "y": 4
+      }
+    ],
+    "spawnPoints": {
+      "player": [
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        }
+      ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "eventBeat": {
+    "style": "ftl_branching_text",
+    "prompt": "A cramped service tunnel branches off the corridor. It looks like it bypasses the next car entirely.",
+    "options": [
+      {
+        "id": "scavenge",
+        "label": "[ SCAVENGE HERE ]",
+        "outcome": "resource",
+        "kind": "supplies",
+        "amount": 1,
+        "consequence": "+1 supplies, stay the course"
+      },
+      {
+        "id": "shortcut",
+        "label": "[ TAKE THE TUNNEL ]",
+        "outcome": "shortcut",
+        "consequence": "bypass the next car entirely \u2014 no loot, no fight"
+      }
+    ]
+  },
+  "rewardTable": "reward_event",
+  "allowedModifiers": []
+}

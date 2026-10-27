@@ -1,0 +1,39 @@
+{
+  "id": "captain_s3_head_gardener",
+  "name": "The Conservatory Gate",
+  "type": "captain",
+  "section": 3,
+  "gridSize": { "w": 16, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 7, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 15, "y": 0, "w": 1, "h": 8 }
+    ],
+    "tileFields": [
+      { "region": { "x": 6, "y": 2, "w": 3, "h": 3 }, "concealment": true, "note": "vines" }
+    ],
+    "cover": [
+      { "object": "planter", "x": 5, "y": 4 },
+      { "object": "planter", "x": 10, "y": 3 }
+    ],
+    "objects": [
+      { "object": "gas_main", "x": 12, "y": 6 },
+      { "object": "water_main", "x": 11, "y": 4, "note": "irrigation standpipe BESIDE her (floodRadius 4 reaches her tile at 12,4) — break it to flood/disperse her shroud and expose her for good" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 12, "y": 4 }, { "x": 11, "y": 3 }, { "x": 11, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "captain_gardener", "at": { "x": 12, "y": 4 } },
+    { "enemy": "hound", "at": { "x": 11, "y": 3 } },
+    { "enemy": "enforcer", "at": { "x": 11, "y": 5 } }
+  ],
+  "rewardTable": "reward_captain_s3",
+  "allowedModifiers": ["gas_leak", "overpressure"],
+  "designNote": "Captain key: gas_shroud_must_be_dispersed — the Gardener is immune inside her gas cloud; flood/disperse the gas to expose her."
+}

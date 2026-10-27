@@ -1,0 +1,9 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- GAP / coupling (Hazard.GAP) — eject. Bible §3.2  void #0A0C0F, ragged edge, warning arrow -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#1A1E22" stroke="#0B0E11" stroke-width="2"/>
+  <!-- ragged void -->
+  <polygon points="64,9 76,18 92,24 108,32 92,40 76,46 64,55 52,46 36,40 20,32 36,24 52,18" fill="#0A0C0F" stroke="#33383E" stroke-width="1.5"/>
+  <!-- hazard warning down-arrow -->
+  <polygon points="64,24 72,33 67,33 67,42 61,42 61,33 56,33" fill="#FFB000"/>
+  <text x="64" y="20" font-family="monospace" font-size="9" fill="#FFB000" text-anchor="middle">&#9888;</text>
+</svg>

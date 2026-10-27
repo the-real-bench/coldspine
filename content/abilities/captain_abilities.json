@@ -1,0 +1,72 @@
+{
+  "buff_guards": {
+    "id": "buff_guards",
+    "name": "Rally the Line",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 4,
+    "effects": [
+      { "kind": "buff", "stat": "accuracy", "amount": 15, "area": 3, "scope": "allies", "durationTurns": 1 },
+      { "kind": "buff", "stat": "cover", "amount": 1, "area": 3, "scope": "allies", "durationTurns": 1 }
+    ]
+  },
+  "shield_wall": {
+    "id": "shield_wall",
+    "name": "Shield Wall",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "grant_cover", "value": 2, "facing": "frontal" }
+    ]
+  },
+  "captain_slam": {
+    "id": "captain_slam",
+    "name": "Crushing Slam",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 5 },
+      { "kind": "impulse", "force": 3 },
+      { "kind": "status", "status": "prone", "onImpactOnly": true }
+    ]
+  },
+  "summon_hounds": {
+    "id": "summon_hounds",
+    "name": "Loose the Hounds",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "tile",
+    "range": 5,
+    "effects": [
+      { "kind": "spawn_enemy", "enemy": "hound", "count": 2 }
+    ]
+  },
+  "gas_grenade": {
+    "id": "gas_grenade",
+    "name": "Gas Grenade",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "tile",
+    "range": 6,
+    "effects": [
+      { "kind": "spawn_hazard", "hazard": "poison_gas", "radius": 2 }
+    ]
+  },
+  "marking_call": {
+    "id": "marking_call",
+    "name": "Mark Target",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 8,
+    "effects": [
+      { "kind": "apply_trait_temp", "trait": "marked", "durationTurns": 3 }
+    ]
+  }
+}

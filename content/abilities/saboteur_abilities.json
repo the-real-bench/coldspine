@@ -1,0 +1,104 @@
+{
+  "rig": {
+    "id": "rig",
+    "name": "Rig",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 4,
+    "effects": [
+      { "kind": "place_charge", "detonate": "next_turn", "explosionDamage": 6, "explosionForce": 4, "explosionRadius": 2 }
+    ]
+  },
+  "hack": {
+    "id": "hack",
+    "name": "Hack",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 4,
+    "effects": [
+      { "kind": "hack", "targets": ["robot", "turret", "junction_box"] }
+    ]
+  },
+  "junction": {
+    "id": "junction",
+    "name": "Junction",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 3,
+    "effects": [
+      { "kind": "deploy_power_source" },
+      { "kind": "electrify", "requires_water": true, "force": 0 },
+      { "kind": "status", "status": "shocked", "area": "connected_water" }
+    ]
+  },
+  "gas_tap": {
+    "id": "gas_tap",
+    "name": "Gas Tap",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 4,
+    "effects": [
+      { "kind": "spawn_hazard", "hazard": "poison_gas", "radius": 2 }
+    ]
+  },
+  "remote_detonate": {
+    "id": "remote_detonate",
+    "name": "Remote Detonate",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "detonate_all_charges", "on_command": true }
+    ]
+  },
+  "overclock_hack": {
+    "id": "overclock_hack",
+    "name": "Overclock Hack",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "hacked_units_extra_action", "count": 1 }
+    ]
+  },
+  "pyro_loop": {
+    "id": "pyro_loop",
+    "name": "Pyro Loop",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 4,
+    "effects": [
+      { "kind": "ignite_gas", "explosionDamage": 6, "explosionForce": 4 }
+    ]
+  },
+  "coolant_master": {
+    "id": "coolant_master",
+    "name": "Coolant Master",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 6,
+    "effects": [
+      { "kind": "rupture_tank", "atRange": true, "floodRadiusBonus": 2 }
+    ]
+  },
+  "system_seizure": {
+    "id": "system_seizure",
+    "name": "System Seizure",
+    "apCost": 2,
+    "endsTurn": true,
+    "targeting": "self",
+    "range": 0,
+    "cooldown": 5,
+    "effects": [
+      { "kind": "disable_all_cycling_traps", "durationTurns": 2 }
+    ]
+  }
+}

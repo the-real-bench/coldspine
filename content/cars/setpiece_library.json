@@ -1,0 +1,42 @@
+{
+  "id": "setpiece_library",
+  "name": "Library / Archive",
+  "type": "combat",
+  "section": 4,
+  "reconTell": "ARCHIVE",
+  "reconTags": ["FLAMMABLE", "TOPPLE", "CONCEAL"],
+  "gridSize": { "w": 16, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 3, "y": 5, "w": 2, "h": 2 }, "concealment": true, "note": "reading nook" }
+    ],
+    "cover": [
+      { "object": "bookshelf", "x": 5, "y": 2 },
+      { "object": "bookshelf", "x": 7, "y": 2 },
+      { "object": "bookshelf", "x": 9, "y": 2 },
+      { "object": "bookshelf", "x": 5, "y": 7 },
+      { "object": "bookshelf", "x": 7, "y": 7 },
+      { "object": "table", "x": 11, "y": 4 }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 12, "y": 2 }, { "x": 13, "y": 5 }, { "x": 12, "y": 8 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "sniper", "at": { "x": 13, "y": 5 } },
+    { "enemy": "truncheon_guard", "at": { "x": 12, "y": 2 } },
+    { "enemy": "net_gunner", "at": { "x": 12, "y": 8 } }
+  ],
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["flickering_lights", "loose_cargo"],
+  "designNote": "Topple shelves as dominoes (line crush chaining shelf to shelf). Flammable paper — fire spreads. Concealment nooks enable ambush."
+}

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- WATER LAYER (L_WATER). Bible §3.3  #2E8BC0 @60% over floor, foam edge #7EC8E3 -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="64,1 127,32 64,63 1,32" fill="#2E8BC0" opacity="0.6"/>
+  <polygon points="64,8 120,32 64,56 8,32" fill="none" stroke="#7EC8E3" stroke-width="1.5" opacity="0.8"/>
+  <path d="M22,32 q10,-5 20,0 t20,0 t20,0 t20,0" fill="none" stroke="#7EC8E3" stroke-width="1.5"/>
+  <path d="M30,40 q10,-5 20,0 t20,0 t20,0" fill="none" stroke="#9FD8EE" stroke-width="1" opacity="0.7"/>
+</svg>

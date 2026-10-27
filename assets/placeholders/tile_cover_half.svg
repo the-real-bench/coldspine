@@ -1,0 +1,8 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- HALF COVER (coverValue:1). Bible §3.1  olive #6E7B66, low chevron lip on front edge -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <!-- low half-height cover slab on the front (south) edge -->
+  <polygon points="34,47 64,62 94,47 64,40" fill="#6E7B66" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="34,47 64,40 64,33 34,40" fill="#586350" stroke="#0B0E11" stroke-width="1.5"/>
+  <polygon points="94,47 64,40 64,33 94,40" fill="#7E8C74" stroke="#0B0E11" stroke-width="1.5"/>
+</svg>

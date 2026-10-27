@@ -1,0 +1,10 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- WALL (Terrain.WALL) — blocking/anchored. Bible §3.1  #22262C, raised block -->
+  <!-- left side face -->
+  <polygon points="1,32 64,63 64,43 1,12" fill="#15181C" stroke="#0B0E11" stroke-width="2"/>
+  <!-- right side face -->
+  <polygon points="127,32 64,63 64,43 127,12" fill="#1B1F24" stroke="#0B0E11" stroke-width="2"/>
+  <!-- top face -->
+  <polygon points="64,1 127,12 64,23 1,12" fill="#22262C" stroke="#0B0E11" stroke-width="2"/>
+  <polyline points="1,12 64,1 127,12" fill="none" stroke="#4A525C" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "id": "combat_security_01",
+  "name": "Security Checkpoint",
+  "type": "combat",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 3 },
+      { "object": "crate", "x": 4, "y": 5 },
+      { "object": "table", "x": 7, "y": 2 },
+      { "object": "barrel_explosive", "x": 9, "y": 6 }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 1, "y": 4 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 5 }, { "x": 2, "y": 4 } ],
+      "enemy": [ { "x": 8, "y": 2 }, { "x": 9, "y": 4 }, { "x": 8, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 8, "y": 2 } },
+    { "enemy": "truncheon_guard", "at": { "x": 8, "y": 5 } },
+    { "enemy": "riot_shield", "at": { "x": 9, "y": 4 } }
+  ],
+  "rewardTable": "reward_combat_s1",
+  "allowedModifiers": ["cramped", "flickering_lights", "loose_cargo", "sabotaged_security", "lockdown"]
+}

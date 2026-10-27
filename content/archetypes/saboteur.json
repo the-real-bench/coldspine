@@ -1,0 +1,15 @@
+{
+  "id": "saboteur",
+  "name": "Saboteur",
+  "role": "tech",
+  "baseStats": { "hp": 9, "move": 4, "accuracy": 65, "mass": "light" },
+  "innateTrait": null,
+  "startingAbilities": ["rig", "hack"],
+  "abilityTree": [
+    ["junction", "gas_tap"],
+    ["remote_detonate", "overclock_hack"],
+    ["pyro_loop", "coolant_master"]
+  ],
+  "capstone": "system_seizure",
+  "traitAffinity": ["tinkerer", "demolitions_expert", "informant"]
+}

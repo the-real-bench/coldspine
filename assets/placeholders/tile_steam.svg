@@ -1,0 +1,9 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- STEAM VENT (Hazard.STEAM) — blinds + blocks LoS for a turn (D2.5). #C9CDD2 cloud. -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <rect x="58" y="34" width="12" height="8" rx="2" fill="#5A6470" stroke="#0B0E11" stroke-width="1"/>
+  <circle cx="56" cy="26" r="9" fill="#C9CDD2" opacity="0.5"/>
+  <circle cx="72" cy="24" r="10" fill="#C9CDD2" opacity="0.5"/>
+  <circle cx="64" cy="18" r="8" fill="#C9CDD2" opacity="0.45"/>
+  <circle cx="48" cy="30" r="7" fill="#C9CDD2" opacity="0.4"/>
+</svg>

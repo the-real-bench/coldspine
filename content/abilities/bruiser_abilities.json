@@ -1,0 +1,109 @@
+{
+  "slam": {
+    "id": "slam",
+    "name": "Slam",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "impulse", "force": 4 },
+      { "kind": "status", "status": "prone", "onImpactOnly": true }
+    ]
+  },
+  "heave": {
+    "id": "heave",
+    "name": "Heave",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 1,
+    "effects": [
+      { "kind": "throw", "force": 4 },
+      { "kind": "damage", "amount": 3, "onImpactOnly": true },
+      { "kind": "status", "status": "prone", "onImpactOnly": true }
+    ]
+  },
+  "bull_rush": {
+    "id": "bull_rush",
+    "name": "Bull Rush",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "direction",
+    "range": 4,
+    "effects": [
+      { "kind": "move" },
+      { "kind": "impulse", "force": 3, "trigger": "on_enter_enemy" }
+    ]
+  },
+  "bracing": {
+    "id": "bracing",
+    "name": "Bracing",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "shove_immune", "unless_status": "soaked" }
+    ]
+  },
+  "pin": {
+    "id": "pin",
+    "name": "Pin",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "impulse", "force": 4 },
+      { "kind": "status", "status": "prone", "onImpactOnly": true },
+      { "kind": "status", "status": "stunned", "onWallImpactOnly": true }
+    ]
+  },
+  "sweep": {
+    "id": "sweep",
+    "name": "Sweep",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "direction",
+    "range": 1,
+    "effects": [
+      { "kind": "impulse", "force": 3, "arc": 3 },
+      { "kind": "status", "status": "prone", "arc": 3 }
+    ]
+  },
+  "bodyguard": {
+    "id": "bodyguard",
+    "name": "Bodyguard",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 1,
+    "effects": [
+      { "kind": "intercept_overwatch", "radius": 1 }
+    ]
+  },
+  "demolition": {
+    "id": "demolition",
+    "name": "Demolition",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "object_damage_mult", "value": 2 }
+    ]
+  },
+  "juggernaut": {
+    "id": "juggernaut",
+    "name": "Juggernaut",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "status_immune", "status": "prone" },
+      { "kind": "slam_force_bonus", "value": 2 }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "_schema": "TraitDef per Sub-Spec C5. category: combat|physics|utility|social|risk|hidden. polarity: positive|negative|mixed|hidden.",
+  "traits": [
+    {
+      "id": "steady_hands",
+      "name": "Steady Hands",
+      "category": "combat",
+      "polarity": "positive",
+      "effects": [ { "kind": "stat_mod", "stat": "accuracy", "amount": 10 } ]
+    },
+    {
+      "id": "brawler",
+      "name": "Brawler",
+      "category": "combat",
+      "polarity": "positive",
+      "effects": [ { "kind": "shove_force_mod", "amount": 1 }, { "kind": "melee_force_mod", "amount": 1 } ],
+      "archetypeAffinity": ["bruiser", "firebrand"]
+    },
+    {
+      "id": "crack_shot",
+      "name": "Crack Shot",
+      "category": "combat",
+      "polarity": "positive",
+      "effects": [ { "kind": "crit_chance_on_flank", "amount": 20 } ],
+      "archetypeAffinity": ["marksman"]
+    },
+    {
+      "id": "tough",
+      "name": "Tough",
+      "category": "combat",
+      "polarity": "positive",
+      "effects": [ { "kind": "stat_mod", "stat": "hp", "amount": 3 } ]
+    },
+    {
+      "id": "hardened",
+      "name": "Hardened",
+      "category": "combat",
+      "polarity": "positive",
+      "effects": [ { "kind": "first_hit_reduced", "amount": 2, "perFight": true } ]
+    },
+    {
+      "id": "glass_jaw",
+      "name": "Glass Jaw",
+      "category": "combat",
+      "polarity": "negative",
+      "effects": [ { "kind": "stat_mod", "stat": "hp", "amount": -2 }, { "kind": "impact_damage_taken_mod", "amount": 2 } ]
+    },
+    {
+      "id": "shaky",
+      "name": "Shaky",
+      "category": "combat",
+      "polarity": "negative",
+      "effects": [ { "kind": "stat_mod_while_status", "stat": "accuracy", "amount": -15, "status": "suppressed" } ]
+    },
+    {
+      "id": "planted",
+      "name": "Planted",
+      "category": "physics",
+      "polarity": "positive",
+      "effects": [ { "kind": "effective_mass_mod", "amount": 1 } ]
+    },
+    {
+      "id": "sure_footed",
+      "name": "Sure-Footed",
+      "category": "physics",
+      "polarity": "positive",
+      "effects": [ { "kind": "status_immune_from_source", "status": "prone", "source": "flood" } ]
+    },
+    {
+      "id": "demolitions_expert",
+      "name": "Demolitions Expert",
+      "category": "physics",
+      "polarity": "positive",
+      "effects": [ { "kind": "object_integrity_damage_mod", "amount": 2 } ],
+      "archetypeAffinity": ["bruiser", "saboteur"]
+    },
+    {
+      "id": "featherweight",
+      "name": "Featherweight",
+      "category": "physics",
+      "polarity": "mixed",
+      "effects": [ { "kind": "stat_mod", "stat": "move", "amount": 1 }, { "kind": "effective_mass_mod", "amount": -1 } ]
+    },
+    {
+      "id": "informant",
+      "name": "Informant",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "recon_depth_mod", "amount": 1 } ]
+    },
+    {
+      "id": "scavenger",
+      "name": "Scavenger",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "loot_mod", "stat": "scrip", "amount_pct": 25 } ]
+    },
+    {
+      "id": "tinkerer",
+      "name": "Tinkerer",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "starting_resource", "resource": "tools", "amount": 1 }, { "kind": "tool_cost_mod", "amount_pct": -25 } ],
+      "archetypeAffinity": ["saboteur"]
+    },
+    {
+      "id": "quartermaster",
+      "name": "Quartermaster",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "consumable_slot_mod", "amount": 1 } ]
+    },
+    {
+      "id": "iron_lungs",
+      "name": "Iron Lungs",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "status_immune", "status": "poisoned" } ]
+    },
+    {
+      "id": "fireproof",
+      "name": "Fireproof",
+      "category": "utility",
+      "polarity": "positive",
+      "effects": [ { "kind": "damage_resist", "damageType": "fire", "amount_pct": 50 }, { "kind": "no_self_burning_spread" } ]
+    },
+    {
+      "id": "inspiring",
+      "name": "Inspiring",
+      "category": "social",
+      "polarity": "positive",
+      "effects": [ { "kind": "aura", "stat": "accuracy", "amount": 5, "radius": 1, "scope": "allies" } ],
+      "archetypeAffinity": ["firebrand", "steward"]
+    },
+    {
+      "id": "loyal",
+      "name": "Loyal",
+      "category": "social",
+      "polarity": "positive",
+      "effects": [ { "kind": "morale_immune" }, { "kind": "bond_gain_mod", "amount_pct": 50 } ]
+    },
+    {
+      "id": "merciful",
+      "name": "Merciful",
+      "category": "social",
+      "polarity": "mixed",
+      "effects": [ { "kind": "spare_reward_mod", "amount_pct": 50 }, { "kind": "kill_order_mod", "amount": 1 } ]
+    },
+    {
+      "id": "hardliner",
+      "name": "Hardliner",
+      "category": "social",
+      "polarity": "mixed",
+      "effects": [ { "kind": "kill_resource_mod", "amount_pct": 50 }, { "kind": "kill_order_mod", "amount": 1 }, { "kind": "block_recruit_while_present" } ]
+    },
+    {
+      "id": "bonded",
+      "name": "Bonded",
+      "category": "social",
+      "polarity": "mixed",
+      "effects": [ { "kind": "aura_self_buff_near_bonded", "stat": "accuracy", "amount": 10 }, { "kind": "grief_debuff_on_bonded_death" } ],
+      "note": "instanced with a target ally name at creation: 'Bonded: <name>'"
+    },
+    {
+      "id": "coward",
+      "name": "Coward",
+      "category": "risk",
+      "polarity": "negative",
+      "effects": [ { "kind": "flee_below_hp_pct", "threshold": 25 } ]
+    },
+    {
+      "id": "bloodthirsty",
+      "name": "Bloodthirsty",
+      "category": "risk",
+      "polarity": "mixed",
+      "effects": [ { "kind": "damage_bonus", "amount": 2 }, { "kind": "must_attack_if_able" } ]
+    },
+    {
+      "id": "reckless",
+      "name": "Reckless",
+      "category": "risk",
+      "polarity": "mixed",
+      "effects": [ { "kind": "stat_mod", "stat": "move", "amount": 1 }, { "kind": "damage_bonus", "amount": 2 }, { "kind": "skips_cover_chance", "amount_pct": 50 } ]
+    },
+    {
+      "id": "frail_veteran",
+      "name": "Frail Veteran",
+      "category": "risk",
+      "polarity": "mixed",
+      "effects": [ { "kind": "stat_mod", "stat": "accuracy", "amount": 15 }, { "kind": "extra_ability_pick", "amount": 1 }, { "kind": "stat_mod", "stat": "hp", "amount": -3 } ]
+    },
+    {
+      "id": "conductors_kin",
+      "name": "Conductor's Kin",
+      "category": "hidden",
+      "polarity": "hidden",
+      "hidden": true,
+      "revealCondition": "saboteur_scan",
+      "effects": [ { "kind": "betrayal_beat", "trigger": "story_beat", "actions": ["sabotage_door", "raise_alarm", "defect"] } ]
+    },
+    {
+      "id": "survivors_guilt",
+      "name": "Survivor's Guilt",
+      "category": "hidden",
+      "polarity": "mixed",
+      "hidden": true,
+      "gainable": true,
+      "revealCondition": "story_beat",
+      "effects": [ { "kind": "temp_debuff_after_ally_death", "hardens_to": "permanent_resilience_buff", "afterTurns": 4 } ]
+    },
+    {
+      "id": "marked",
+      "name": "Marked",
+      "category": "risk",
+      "polarity": "negative",
+      "gainable": true,
+      "effects": [ { "kind": "priority_target", "by": ["sniper", "overcharge"] } ]
+    }
+  ]
+}

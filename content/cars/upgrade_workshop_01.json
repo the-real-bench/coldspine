@@ -1,0 +1,30 @@
+{
+  "id": "upgrade_workshop_01",
+  "name": "Workshop",
+  "type": "upgrade",
+  "section": 2,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "table", "x": 6, "y": 4 }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 6, "y": 2 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "rewardTable": "reward_upgrade_weapon_or_mod",
+  "allowedModifiers": ["supply_drop"]
+}

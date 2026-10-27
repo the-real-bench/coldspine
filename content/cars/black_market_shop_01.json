@@ -1,0 +1,30 @@
+{
+  "id": "black_market_shop_01",
+  "name": "Black Market",
+  "type": "shop",
+  "section": 3,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "crate", "x": 7, "y": 5 }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "merchant": [ { "x": 8, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "shopBeat": { "sells": ["gear", "consumables", "services"], "currency": "scrip" },
+  "rewardTable": "reward_shop_stock",
+  "allowedModifiers": []
+}

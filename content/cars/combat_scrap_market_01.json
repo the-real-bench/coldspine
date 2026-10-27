@@ -1,0 +1,43 @@
+{
+  "id": "combat_scrap_market_01",
+  "name": "Scrap Market",
+  "type": "combat",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 2, "note": "stall" },
+      { "object": "crate", "x": 4, "y": 5 },
+      { "object": "serving_cart", "x": 6, "y": 3, "note": "scrap barrow" },
+      { "object": "crate", "x": 8, "y": 5 }
+    ],
+    "objects": [
+      { "object": "barrel_explosive", "x": 7, "y": 6, "note": "fuel drum by the stove" }
+    ],
+    "hazards": [
+      { "hazard": "debris", "at": { "x": 3, "y": 4 }, "note": "rubble aisle" },
+      { "hazard": "debris", "at": { "x": 6, "y": 5 } },
+      { "hazard": "debris", "at": { "x": 9, "y": 2 } },
+      { "hazard": "fire_vent", "at": { "x": 8, "y": 6 }, "note": "scrap-stove flue" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 5 }, { "x": 2, "y": 4 } ],
+      "enemy": [ { "x": 9, "y": 3 }, { "x": 8, "y": 4 }, { "x": 9, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 3 } },
+    { "enemy": "riot_shield", "at": { "x": 8, "y": 4 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 6 } }
+  ],
+  "rewardTable": "reward_combat_s1",
+  "allowedModifiers": ["cramped", "loose_cargo", "flickering_lights", "sabotaged_security"],
+  "designNote": "Tail barter aisle between stalls. Debris rubble gives scrappy half cover; the scrap-stove flue cycles fire next to a fuel drum — shove the rear guard into the stove corner for a fire+explosion chain."
+}

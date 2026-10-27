@@ -1,0 +1,37 @@
+{
+  "id": "captain_s2_foreman",
+  "name": "The Foundry Gate",
+  "type": "captain",
+  "section": 2,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 4 },
+      { "object": "barrel_explosive", "x": 7, "y": 2 }
+    ],
+    "objects": [],
+    "hazards": [
+      { "hazard": "furnace", "at": { "x": 11, "y": 6 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 10, "y": 4 }, { "x": 9, "y": 3 }, { "x": 9, "y": 5 }, { "x": 11, "y": 4 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "captain_foreman", "at": { "x": 10, "y": 4 } },
+    { "enemy": "riot_shield", "at": { "x": 9, "y": 3 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 5 } },
+    { "enemy": "net_gunner", "at": { "x": 11, "y": 4 } }
+  ],
+  "rewardTable": "reward_captain_s2",
+  "allowedModifiers": ["lockdown", "furnace_row"],
+  "designNote": "Captain key: kill_to_drop_guard_buff — the Foreman buffs nearby guards; kill or isolate him to collapse the line."
+}

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- NET GUNNER (enemy). Bible §3.5 red ring. Net glyph — priority kill. -->
+  <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.14"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="4"/>
+  <ellipse cx="42" cy="52" rx="13" ry="20" fill="#3A2A2A" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="42" cy="35" r="8" fill="#3A2A2A" stroke="#0B0E11" stroke-width="2"/>
+  <!-- net diamond glyph -->
+  <g stroke="#C9CDD2" stroke-width="1.5" fill="none">
+    <polygon points="68,38 80,50 68,62 56,50"/>
+    <line x1="62" y1="44" x2="74" y2="56"/>
+    <line x1="74" y1="44" x2="62" y2="56"/>
+    <line x1="56" y1="50" x2="80" y2="50"/>
+    <line x1="68" y1="38" x2="68" y2="62"/>
+  </g>
+</svg>

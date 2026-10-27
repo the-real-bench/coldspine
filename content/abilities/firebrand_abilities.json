@@ -1,0 +1,105 @@
+{
+  "lunge": {
+    "id": "lunge",
+    "name": "Lunge",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 4,
+    "effects": [
+      { "kind": "move", "toAdjacent": true },
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 4 }
+    ]
+  },
+  "rally": {
+    "id": "rally",
+    "name": "Rally",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 2,
+    "effects": [
+      { "kind": "buff", "stat": "accuracy", "amount": 10, "area": 2, "durationTurns": 1 }
+    ]
+  },
+  "zeal": {
+    "id": "zeal",
+    "name": "Zeal",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "momentum_grants", "stat": "accuracy" }
+    ]
+  },
+  "reckless_ability": {
+    "id": "reckless_ability",
+    "name": "Reckless",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "damage_bonus", "amount": 2 },
+      { "kind": "self_recoil", "amount": 1 }
+    ]
+  },
+  "inspire": {
+    "id": "inspire",
+    "name": "Inspire",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "ap_on_ally_kill", "amount": 1 }
+    ]
+  },
+  "martyrs_wake": {
+    "id": "martyrs_wake",
+    "name": "Martyr's Wake",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "momentum_gain_on_ally_death", "amount": 3, "overrides_loss": true }
+    ]
+  },
+  "warcry": {
+    "id": "warcry",
+    "name": "Warcry",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 2,
+    "effects": [
+      { "kind": "clear_status", "status": ["suppressed"], "area": 2 },
+      { "kind": "buff", "stat": "move", "amount": 2, "area": 2, "durationTurns": 1 }
+    ]
+  },
+  "overrun": {
+    "id": "overrun",
+    "name": "Overrun",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "refund_ability", "ability": "lunge", "trigger": "on_kill" }
+    ]
+  },
+  "vanguard": {
+    "id": "vanguard",
+    "name": "Vanguard",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "guaranteed_crit", "trigger": "first_strike", "requires": "max_momentum" }
+    ]
+  }
+}

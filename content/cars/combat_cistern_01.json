@@ -1,0 +1,42 @@
+{
+  "id": "combat_cistern_01",
+  "name": "Cistern Catwalk",
+  "type": "combat",
+  "section": 2,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "crate", "x": 5, "y": 5 },
+      { "object": "bench", "x": 6, "y": 2 }
+    ],
+    "objects": [
+      { "object": "water_main", "x": 9, "y": 3, "note": "cistern feed — the flood source (floodRadius 4)" },
+      { "object": "junction_box", "x": 11, "y": 1, "isPowerSource": true }
+    ],
+    "hazards": [
+      { "hazard": "water", "at": { "x": 8, "y": 5 }, "note": "standing overflow along the catwalk" },
+      { "hazard": "water", "at": { "x": 9, "y": 5 } },
+      { "hazard": "water", "at": { "x": 10, "y": 5 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 8, "y": 4 }, { "x": 10, "y": 4 }, { "x": 9, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 8, "y": 4 } },
+    { "enemy": "riot_shield", "at": { "x": 10, "y": 4 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 6 } }
+  ],
+  "rewardTable": "reward_combat_equip_s2",
+  "allowedModifiers": ["cramped", "loose_cargo", "overpressure", "flickering_lights"],
+  "designNote": "Third-class FLOOD-SETUP teacher. Break the cistern feed (anchored water_main, floodRadius 4) to sweep the catwalk overflow across the guards, then shoot the junction box to electrify the soaked line — the S2 flood -> soak -> electrify room. Drops a weapon/armor cache (reward_combat_equip_s2) so a shopless line still gears up."
+}

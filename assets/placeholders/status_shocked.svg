@@ -1,0 +1,5 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- SHOCKED (S_SHOCKED) #FFE14D — lightning bolt -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#FFE14D" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="13,4 7,13 11,13 9,20 17,10 12,10 15,4" fill="#F2F4F6" stroke="#0B0E11" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

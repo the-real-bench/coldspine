@@ -1,0 +1,32 @@
+{
+  "id": "shop_rag_market_01",
+  "name": "Rag Market",
+  "type": "shop",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3, "note": "rag bales" },
+      { "object": "crate", "x": 7, "y": 5 },
+      { "object": "serving_cart", "x": 6, "y": 4, "note": "trader's barrow" }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "merchant": [ { "x": 8, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "shopBeat": { "sells": ["gear", "consumables", "services"], "currency": "scrip" },
+  "rewardTable": "reward_shop_stock",
+  "allowedModifiers": [],
+  "designNote": "Tail-skin shop car (black_market_shop_01 clone) so Section 1 has a native SHOP deck entry — a barrow trader among rag bales."
+}

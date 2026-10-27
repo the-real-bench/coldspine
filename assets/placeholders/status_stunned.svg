@@ -1,0 +1,7 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- STUNNED (S_STUNNED) #F2D14E — spiral + orbiting stars -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#F2D14E" stroke="#0B0E11" stroke-width="2"/>
+  <path d="M12,12 m0,-4 a4,4 0 1 1 -3.5,2" fill="none" stroke="#0B0E11" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="17,6 18,8 20,8 18.5,9.5 19,11.5 17,10.5 15,11.5 15.5,9.5 14,8 16,8" fill="#F2F4F6" stroke="#0B0E11" stroke-width="0.6"/>
+  <circle cx="6" cy="17" r="1.5" fill="#F2F4F6" stroke="#0B0E11" stroke-width="0.6"/>
+</svg>

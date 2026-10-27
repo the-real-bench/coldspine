@@ -1,0 +1,86 @@
+{
+  "_schema": "EnemyDef per GDD §21. tier 1-5. mass: light|medium|heavy|anchored. physicsTrait nullable. aiProfile: melee_rush|ranged_hold|flanker|support|robot.",
+  "enemies": [
+    {
+      "id": "truncheon_guard",
+      "name": "Truncheon Guard",
+      "tier": 1,
+      "stats": { "hp": 6, "move": 4, "accuracy": 55, "mass": "medium" },
+      "physicsTrait": null,
+      "abilities": ["truncheon_strike"],
+      "aiProfile": "melee_rush"
+    },
+    {
+      "id": "riot_shield",
+      "name": "Riot Shield",
+      "tier": 1,
+      "stats": { "hp": 8, "move": 3, "accuracy": 50, "mass": "medium" },
+      "physicsTrait": "blocks_frontal_shove",
+      "abilities": ["shield_bash"],
+      "aiProfile": "melee_rush"
+    },
+    {
+      "id": "net_gunner",
+      "name": "Net Gunner",
+      "tier": 2,
+      "stats": { "hp": 6, "move": 4, "accuracy": 60, "mass": "light" },
+      "physicsTrait": null,
+      "abilities": ["net_shot"],
+      "aiProfile": "ranged_hold"
+    },
+    {
+      "id": "enforcer",
+      "name": "Enforcer",
+      "tier": 3,
+      "stats": { "hp": 10, "move": 3, "accuracy": 65, "mass": "heavy" },
+      "physicsTrait": null,
+      "abilities": ["enforcer_volley"],
+      "aiProfile": "ranged_hold"
+    },
+    {
+      "id": "hound",
+      "name": "Hound",
+      "tier": 3,
+      "stats": { "hp": 5, "move": 7, "accuracy": 55, "mass": "light" },
+      "physicsTrait": null,
+      "abilities": ["hound_pounce"],
+      "aiProfile": "flanker"
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper",
+      "tier": 4,
+      "stats": { "hp": 6, "move": 3, "accuracy": 80, "mass": "light" },
+      "physicsTrait": null,
+      "abilities": ["sniper_shot", "sniper_overwatch"],
+      "aiProfile": "ranged_hold"
+    },
+    {
+      "id": "drone_operator",
+      "name": "Drone Operator",
+      "tier": 4,
+      "stats": { "hp": 7, "move": 4, "accuracy": 60, "mass": "light" },
+      "physicsTrait": null,
+      "abilities": ["deploy_bot"],
+      "aiProfile": "support"
+    },
+    {
+      "id": "security_robot",
+      "name": "Security Robot",
+      "tier": 5,
+      "stats": { "hp": 12, "move": 4, "accuracy": 60, "mass": "heavy" },
+      "physicsTrait": "hackable",
+      "abilities": ["robot_ram"],
+      "aiProfile": "robot"
+    },
+    {
+      "id": "sentry_turret",
+      "name": "Sentry Turret",
+      "tier": 5,
+      "stats": { "hp": 8, "move": 0, "accuracy": 70, "mass": "anchored" },
+      "physicsTrait": "static_destructible",
+      "abilities": ["turret_burst"],
+      "aiProfile": "ranged_hold"
+    }
+  ]
+}

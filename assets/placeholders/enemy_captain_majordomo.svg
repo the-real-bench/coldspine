@@ -1,0 +1,18 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- CAPTAIN: The Majordomo (S4) — destroy_his_cover_then_flank. Key tell = COVER (grey slab). Ranged, SHIELDED until cover stripped. -->
+  <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.16"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="4"/>
+  <circle cx="48" cy="48" r="38" fill="none" stroke="#E0432E" stroke-width="2" opacity="0.7"/>
+  <!-- tall formal tailcoat body -->
+  <polygon points="48,22 60,34 58,72 38,72 36,34" fill="#26262E" stroke="#0B0E11" stroke-width="2.5"/>
+  <circle cx="48" cy="30" r="9" fill="#26262E" stroke="#0B0E11" stroke-width="2"/>
+  <!-- white shirt front -->
+  <polygon points="48,40 52,46 48,64 44,46" fill="#C9CDD2" stroke="#0B0E11" stroke-width="1"/>
+  <!-- COVER slab in front (the thing to strip) -->
+  <rect x="30" y="60" width="36" height="14" rx="2" fill="#9AA3AD" stroke="#0B0E11" stroke-width="2.5"/>
+  <!-- gold rank -->
+  <polygon points="48,42 58,49 48,47 38,49" fill="#C9A24A" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- COVER key mote -->
+  <circle cx="72" cy="22" r="7" fill="#9AA3AD" stroke="#0B0E11" stroke-width="1.5"/>
+  <path d="M72 17 l4 2 v4 q0 3 -4 4 q-4 -1 -4 -4 v-4 Z" fill="#F2F4F6" stroke="#0B0E11" stroke-width="1"/>
+</svg>

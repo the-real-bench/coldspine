@@ -1,0 +1,8 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- POTTERY VASE (object, light, no cover). onBreak: COLLAPSE (shatters). Terracotta #B07A4A. -->
+  <path d="M40,34 q-8,14 -2,30 q4,12 10,12 q6,0 10,-12 q6,-16 -2,-30 Z" fill="#B07A4A" stroke="#0B0E11" stroke-width="2"/>
+  <ellipse cx="48" cy="34" rx="9" ry="3.5" fill="#8A5E36" stroke="#0B0E11" stroke-width="1.5"/>
+  <path d="M40,46 q8,4 16,0" fill="none" stroke="#8A5E36" stroke-width="1.5"/>
+  <path d="M42,58 q6,3 12,0" fill="none" stroke="#8A5E36" stroke-width="1.5"/>
+  <g fill="#9AA3AD"><rect x="42" y="84" width="6" height="4"/><rect x="50" y="84" width="6" height="4"/></g>
+</svg>

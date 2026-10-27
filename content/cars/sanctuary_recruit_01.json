@@ -1,0 +1,29 @@
+{
+  "id": "sanctuary_recruit_01",
+  "name": "Sanctuary",
+  "type": "recruit",
+  "section": 2,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 4 }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "recruit": [ { "x": 7, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "recruitBeat": { "rolls": "archetype_plus_traits", "hiddenTraitPossible": true, "partiallyShown": true },
+  "rewardTable": "reward_recruit",
+  "allowedModifiers": ["sympathizers"]
+}

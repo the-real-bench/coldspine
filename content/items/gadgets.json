@@ -1,0 +1,93 @@
+{
+  "_schema": "Gadgets & consumables (§11). slot:gadget (equippable) or consumable (one-shot). Bias to physics-interacting gear.",
+  "items": [
+    {
+      "id": "grapple",
+      "name": "Grapple",
+      "slot": "gadget",
+      "tier": 2,
+      "apCost": 1,
+      "targeting": "enemy",
+      "range": 5,
+      "effects": [ { "kind": "pull", "force": 4 } ],
+      "physicsRiders": ["pull"]
+    },
+    {
+      "id": "portable_junction_box",
+      "name": "Portable Junction Box",
+      "slot": "gadget",
+      "tier": 3,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 3,
+      "effects": [ { "kind": "deploy_power_source" }, { "kind": "electrify", "requires_water": true } ],
+      "physicsRiders": ["on_demand_electrify"]
+    },
+    {
+      "id": "breaching_charge",
+      "name": "Breaching Charge",
+      "slot": "consumable",
+      "tier": 2,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 3,
+      "effects": [ { "kind": "spawn_hazard", "hazard": "explosion", "radius": 2 }, { "kind": "object_integrity_damage_mod", "amount": 6 } ],
+      "physicsRiders": ["radial_impulse"]
+    },
+    {
+      "id": "incendiary_grenade",
+      "name": "Incendiary Grenade",
+      "slot": "consumable",
+      "tier": 2,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 5,
+      "effects": [ { "kind": "spawn_hazard", "hazard": "fire", "radius": 1 }, { "kind": "status", "status": "burning", "area": 1 } ],
+      "physicsRiders": ["ignites_gas"]
+    },
+    {
+      "id": "flashbang",
+      "name": "Flashbang",
+      "slot": "consumable",
+      "tier": 1,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 5,
+      "effects": [ { "kind": "status", "status": "blinded", "area": 1 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "stun_grenade",
+      "name": "Stun Grenade",
+      "slot": "consumable",
+      "tier": 2,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 5,
+      "effects": [ { "kind": "status", "status": "stunned", "area": 1 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "medkit",
+      "name": "Medkit",
+      "slot": "consumable",
+      "tier": 1,
+      "apCost": 1,
+      "targeting": "ally",
+      "range": 1,
+      "effects": [ { "kind": "heal", "amount": 5 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "smoke_canister",
+      "name": "Smoke Canister",
+      "slot": "consumable",
+      "tier": 1,
+      "apCost": 1,
+      "targeting": "tile",
+      "range": 5,
+      "effects": [ { "kind": "spawn_hazard", "hazard": "steam_vent", "radius": 1, "blocksLoS": true } ],
+      "physicsRiders": []
+    }
+  ]
+}

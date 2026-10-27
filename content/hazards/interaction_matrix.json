@@ -1,0 +1,28 @@
+{
+  "_schema": "Sub-Spec D4 interaction matrix encoded as a deterministic lookup. Resolve in environment phase after propagation, before DoT (D5). 'a' meets 'b' -> result. Precedence: Water beats Fire; Fire+Gas beats everything (explode); Water disperses Gas; Steam dries Water.",
+  "interactions": [
+    { "a": "water", "b": "fire",   "result": "extinguish",      "note": "Water wins: Fire removed from tile" },
+    { "a": "water", "b": "gas",    "result": "disperse_gas",    "note": "Gas cleared from tile" },
+    { "a": "water", "b": "spark",  "result": "electrify",       "enqueues": "shock_chain", "note": "Shock chains through all connected soaked tiles" },
+    { "a": "water", "b": "water",  "result": "merge" },
+    { "a": "fire",  "b": "water",  "result": "boil_off",        "note": "Water wins on the tile; fire does not establish" },
+    { "a": "fire",  "b": "gas",    "result": "ignite",          "enqueues": "explosion", "note": "IGNITE -> Explosion over the gas volume" },
+    { "a": "fire",  "b": "fire",   "result": "merge_spread" },
+    { "a": "fire",  "b": "spark",  "result": "already_hot" },
+    { "a": "gas",   "b": "water",  "result": "dispersed" },
+    { "a": "gas",   "b": "fire",   "result": "ignite",          "enqueues": "explosion" },
+    { "a": "gas",   "b": "spark",  "result": "ignite",          "enqueues": "explosion" },
+    { "a": "gas",   "b": "gas",    "result": "merge_expand" },
+    { "a": "steam", "b": "water",  "result": "boils_water_off", "note": "Steam dries Water on its tile" },
+    { "a": "explosion", "b": "fire", "result": "residual_fire", "note": "Explosion may leave residual Fire" },
+    { "a": "explosion", "b": "gas",  "result": "consume_gas",   "note": "Explosion clears the Gas it ignited" }
+  ],
+  "explosion": {
+    "produced_by": ["any_ignite", "explosive_on_break"],
+    "effect": "one-time over volume: damage + radial impulse to all entities (via Sub-Spec A resolver); clears Gas; may seed residual Fire",
+    "damage": 6,
+    "force": 4,
+    "radius": 2
+  },
+  "ignitionSources": ["fire", "fire_vent", "laser_grid", "laser_sweep", "electrified_plate", "furnace", "live_rail", "spark", "pyro_loop"]
+}

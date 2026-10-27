@@ -1,0 +1,43 @@
+{
+  "id": "setpiece_cold_storage",
+  "name": "Cold Storage",
+  "type": "combat",
+  "section": 3,
+  "reconTell": "COLD STORAGE",
+  "reconTags": ["COLD", "ICE", "CONCEAL"],
+  "gridSize": { "w": 14, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 9, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 13, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 1, "y": 1, "w": 12, "h": 8 }, "status": "chilled", "statusEachTurn": true, "note": "interior freeze biome" },
+      { "region": { "x": 6, "y": 4, "w": 2, "h": 2 }, "friction": 0, "note": "frost slip" },
+      { "region": { "x": 4, "y": 3, "w": 1, "h": 4 }, "concealment": true, "note": "hanging carcasses (swing/concealment)" },
+      { "region": { "x": 9, "y": 3, "w": 1, "h": 4 }, "concealment": true }
+    ],
+    "cover": [
+      { "object": "crate", "x": 7, "y": 2 },
+      { "object": "crate", "x": 7, "y": 7 }
+    ],
+    "objects": [
+      { "object": "coolant_tank", "x": 11, "y": 2 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 10, "y": 4 }, { "x": 11, "y": 6 }, { "x": 10, "y": 7 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 10, "y": 4 } },
+    { "enemy": "enforcer", "at": { "x": 11, "y": 6 } },
+    { "enemy": "net_gunner", "at": { "x": 10, "y": 7 } }
+  ],
+  "rewardTable": "reward_setpiece_s3",
+  "allowedModifiers": ["open_roof", "flickering_lights"],
+  "designNote": "Interior freeze biome — Chilled ticks toward Frozen. Hanging carcasses are swinging concealment. Frost-slip patch for slides. Thaw with fire to clear Frozen."
+}

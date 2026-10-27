@@ -1,0 +1,104 @@
+{
+  "_schema": "Weapon items. slot:weapon. wclass: melee|ranged. physics riders ride in effects[] (knockback/shove-on-hit). damageBand is [min,max].",
+  "items": [
+    {
+      "id": "pipe_wrench",
+      "name": "Pipe Wrench",
+      "slot": "weapon",
+      "wclass": "melee",
+      "tier": 1,
+      "range": 1,
+      "damageBand": [2, 3],
+      "effects": [],
+      "physicsRiders": []
+    },
+    {
+      "id": "maul",
+      "name": "Heavy Maul",
+      "slot": "weapon",
+      "wclass": "melee",
+      "tier": 3,
+      "range": 1,
+      "damageBand": [3, 5],
+      "effects": [ { "kind": "impulse", "force": 2, "trigger": "on_hit" } ],
+      "physicsRiders": ["high_knockback"]
+    },
+    {
+      "id": "riot_baton",
+      "name": "Riot Baton",
+      "slot": "weapon",
+      "wclass": "melee",
+      "tier": 2,
+      "range": 1,
+      "damageBand": [2, 4],
+      "effects": [ { "kind": "status", "status": "stunned", "chance_pct": 25, "trigger": "on_hit" } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "fire_axe",
+      "name": "Fire Axe",
+      "slot": "weapon",
+      "wclass": "melee",
+      "tier": 2,
+      "range": 1,
+      "damageBand": [3, 4],
+      "effects": [ { "kind": "object_integrity_damage_mod", "amount": 3 } ],
+      "physicsRiders": ["destructible_buster"]
+    },
+    {
+      "id": "scrap_pistol",
+      "name": "Scrap Pistol",
+      "slot": "weapon",
+      "wclass": "ranged",
+      "tier": 1,
+      "range": 6,
+      "damageBand": [2, 3],
+      "effects": [],
+      "physicsRiders": []
+    },
+    {
+      "id": "shove_shotgun",
+      "name": "Breach Shotgun",
+      "slot": "weapon",
+      "wclass": "ranged",
+      "tier": 2,
+      "range": 4,
+      "damageBand": [3, 5],
+      "effects": [ { "kind": "impulse", "force": 2, "trigger": "on_hit" } ],
+      "physicsRiders": ["shove_on_hit"]
+    },
+    {
+      "id": "marksman_rifle",
+      "name": "Marksman Rifle",
+      "slot": "weapon",
+      "wclass": "ranged",
+      "tier": 3,
+      "range": 10,
+      "damageBand": [4, 6],
+      "effects": [ { "kind": "stat_mod", "stat": "accuracy", "amount": 10 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "incendiary_launcher",
+      "name": "Incendiary Launcher",
+      "slot": "weapon",
+      "wclass": "ranged",
+      "tier": 4,
+      "range": 6,
+      "damageBand": [2, 3],
+      "effects": [ { "kind": "spawn_hazard", "hazard": "fire", "radius": 1, "trigger": "on_hit" }, { "kind": "status", "status": "burning", "trigger": "on_hit" } ],
+      "physicsRiders": ["ignites_gas"]
+    },
+    {
+      "id": "harpoon_gun",
+      "name": "Harpoon Gun",
+      "slot": "weapon",
+      "wclass": "ranged",
+      "tier": 3,
+      "range": 6,
+      "damageBand": [2, 4],
+      "effects": [ { "kind": "pull", "force": 3, "trigger": "on_hit" } ],
+      "physicsRiders": ["pull_on_hit"]
+    }
+  ]
+}

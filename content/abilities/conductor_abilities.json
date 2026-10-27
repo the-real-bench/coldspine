@@ -1,0 +1,63 @@
+{
+  "re_route": {
+    "id": "re_route",
+    "name": "Re-Route",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "tile",
+    "range": 99,
+    "telegraphTurns": 1,
+    "effects": [
+      { "kind": "toggle_hazard_bank", "banks": ["piston_lane", "electrified_plate", "steam_vent"] }
+    ]
+  },
+  "deploy": {
+    "id": "deploy",
+    "name": "Deploy",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "telegraphTurns": 1,
+    "effects": [
+      { "kind": "dispensers_emit", "enemy": "security_robot" }
+    ]
+  },
+  "overcharge": {
+    "id": "overcharge",
+    "name": "Overcharge",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "enemy",
+    "range": 99,
+    "telegraphTurns": 1,
+    "effects": [
+      { "kind": "targeted_strike", "select": "most_exposed_or_lowest_hp" },
+      { "kind": "damage", "amount": 6 }
+    ]
+  },
+  "accelerate": {
+    "id": "accelerate",
+    "name": "Accelerate",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "telegraphTurns": 1,
+    "effects": [
+      { "kind": "advance_bridge_countdown", "amount": 1 }
+    ]
+  },
+  "lockdown": {
+    "id": "lockdown",
+    "name": "Lockdown",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "faster_hazard_cycles", "multiplier": 2 },
+      { "kind": "double_deploy" }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "stabilize": {
+    "id": "stabilize",
+    "name": "Stabilize",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 1,
+    "effects": [
+      { "kind": "stabilize", "requires_target_status": "downed" }
+    ]
+  },
+  "patch": {
+    "id": "patch",
+    "name": "Patch",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 1,
+    "effects": [
+      { "kind": "heal", "amount": 4, "costSupplies": 1 }
+    ]
+  },
+  "cleanse": {
+    "id": "cleanse",
+    "name": "Cleanse",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 1,
+    "effects": [
+      { "kind": "clear_status", "status": ["soaked", "burning", "poisoned", "stunned"] }
+    ]
+  },
+  "field_medic": {
+    "id": "field_medic",
+    "name": "Field Medic",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 4,
+    "effects": [
+      { "kind": "stabilize", "requires_target_status": "downed", "atRange": true }
+    ]
+  },
+  "adrenaline": {
+    "id": "adrenaline",
+    "name": "Adrenaline",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 2,
+    "cooldown": 99,
+    "effects": [
+      { "kind": "grant_ap", "amount": 1, "oncePerFight": true }
+    ]
+  },
+  "rebreather_kit": {
+    "id": "rebreather_kit",
+    "name": "Rebreather Kit",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "squad_resist", "resist": ["poisoned", "burning"], "durationTurns": 3 }
+    ]
+  },
+  "triage": {
+    "id": "triage",
+    "name": "Triage",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "extend_bleedout_window", "scope": "squad", "turns": 1 }
+    ]
+  },
+  "rally_banner": {
+    "id": "rally_banner",
+    "name": "Rally Banner",
+    "apCost": 2,
+    "endsTurn": true,
+    "targeting": "tile",
+    "range": 2,
+    "effects": [
+      { "kind": "clear_status", "status": ["soaked", "burning", "poisoned", "stunned"], "area": 2 },
+      { "kind": "heal", "amount": 2, "area": 2 }
+    ]
+  },
+  "last_stand": {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "apCost": 1,
+    "endsTurn": false,
+    "targeting": "ally",
+    "range": 1,
+    "effects": [
+      { "kind": "downed_fights_one_turn", "requires_target_status": "downed" }
+    ]
+  },
+  "guardian_protocol": {
+    "id": "guardian_protocol",
+    "name": "Guardian Protocol",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "survive_at_1hp", "oncePerFight": true, "scope": "ally", "note": "does not break permadeath" }
+    ]
+  }
+}

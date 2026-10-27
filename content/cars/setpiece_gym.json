@@ -1,0 +1,41 @@
+{
+  "id": "setpiece_gym",
+  "name": "Fitness Center",
+  "type": "combat",
+  "section": 3,
+  "reconTell": "FITNESS",
+  "reconTags": ["HEAVY-THROWABLES", "CONVEYOR"],
+  "gridSize": { "w": 16, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 6, "y": 7, "w": 4, "h": 1 }, "hazard": "conveyor", "beltDir": [1, 0], "note": "treadmill row — drags toward wall/hazards" }
+    ],
+    "cover": [
+      { "object": "weight_rack", "x": 5, "y": 3 },
+      { "object": "weight_rack", "x": 9, "y": 5 },
+      { "object": "locker", "x": 11, "y": 2 }
+    ],
+    "objects": [
+      { "object": "barrel_explosive", "x": 4, "y": 6, "note": "medicine balls/kettlebells abstracted as heavy throwables", "mass": "heavy" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 12, "y": 3 }, { "x": 13, "y": 5 }, { "x": 12, "y": 7 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 12, "y": 3 } },
+    { "enemy": "truncheon_guard", "at": { "x": 12, "y": 7 } },
+    { "enemy": "enforcer", "at": { "x": 13, "y": 5 } }
+  ],
+  "rewardTable": "reward_setpiece_s3",
+  "allowedModifiers": ["loose_cargo", "zero_stabilizer", "cramped"],
+  "designNote": "High-mass throwable car — hurl heavy weights (big impact, short throw). Topple loaded weight racks onto clusters. Ride treadmills to drag enemies into hazards."
+}

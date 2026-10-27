@@ -1,0 +1,45 @@
+{
+  "id": "setpiece_garden",
+  "name": "Greenhouse",
+  "type": "flood",
+  "section": 2,
+  "gridSize": { "w": 16, "h": 10 },
+  "reconTell": "GREENHOUSE",
+  "reconTags": ["WATER", "GAS"],
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 5, "y": 2, "w": 2, "h": 2 }, "concealment": true, "note": "hanging vines" },
+      { "region": { "x": 1, "y": 1, "w": 14, "h": 8 }, "friction": 1, "note": "soft soil" }
+    ],
+    "cover": [
+      { "object": "planter", "x": 4, "y": 4 },
+      { "object": "planter", "x": 8, "y": 3 },
+      { "object": "planter", "x": 10, "y": 6 }
+    ],
+    "objects": [
+      { "object": "water_main", "x": 6, "y": 1, "note": "irrigation flood source" },
+      { "object": "gas_main", "x": 12, "y": 8, "note": "pesticide gas source" },
+      { "object": "junction_box", "x": 13, "y": 2, "isPowerSource": true }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 11, "y": 3 }, { "x": 12, "y": 5 }, { "x": 11, "y": 7 } ],
+      "civilian": [ { "x": 7, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "enforcer", "at": { "x": 12, "y": 5 } },
+    { "enemy": "truncheon_guard", "at": { "x": 11, "y": 3 } },
+    { "enemy": "net_gunner", "at": { "x": 11, "y": 7 } }
+  ],
+  "rewardTable": "reward_setpiece_s2",
+  "allowedModifiers": ["overpressure", "gas_leak", "sympathizers", "zero_stabilizer"],
+  "designNote": "The Saboteur's dream car: flood with irrigation, gas with pesticide, then ignite for the marquee explosion (D4) — or electrify the flood. Garden workers = prime recruitment."
+}

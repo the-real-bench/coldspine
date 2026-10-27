@@ -1,0 +1,42 @@
+{
+  "id": "combat_gantry_walk_01",
+  "name": "Coupling Gantry",
+  "type": "combat",
+  "section": 2,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "crate", "x": 5, "y": 5 },
+      { "object": "locker", "x": 7, "y": 4 },
+      { "object": "barrel_explosive", "x": 11, "y": 5, "note": "coupling charge by the rail" }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 12, "y": 1, "isPowerSource": true }
+    ],
+    "hazards": [
+      { "hazard": "gap", "at": { "x": 10, "y": 2 }, "note": "open coupling between cars" },
+      { "hazard": "gap", "at": { "x": 10, "y": 4 } },
+      { "hazard": "gap", "at": { "x": 10, "y": 6 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 9, "y": 2 }, { "x": 9, "y": 4 }, { "x": 9, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 2 } },
+    { "enemy": "enforcer", "at": { "x": 9, "y": 4 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 6 } }
+  ],
+  "rewardTable": "reward_combat_s2",
+  "allowedModifiers": ["cramped", "flickering_lights", "loose_cargo", "lockdown", "sabotaged_security"],
+  "designNote": "Third-class SHOVE-INTO-HAZARD teacher. Three open couplings (gap) sit one tile behind the guard line; each enemy is a Shove/Slam east away from the squad and into the void (eject). The barrel by the rail rewards a displacement chain. A notch lighter than the security corridor (3 enemies, one enforcer) so S2 pacing has variety, not the same deadliest room."
+}

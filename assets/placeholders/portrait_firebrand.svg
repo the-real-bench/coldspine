@@ -1,0 +1,17 @@
+<svg viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- FIREBRAND draft portrait (W5-1). Character art layer (NOT the 64px board token).
+       Bible §3.5 player cyan wash + crimson accent #FF5A1F. Lean, forward, raised torch. -->
+  <rect x="0" y="0" width="140" height="180" fill="#0B0E11"/>
+  <rect x="0" y="0" width="140" height="180" fill="#2EA7E0" opacity="0.07"/>
+  <!-- forward-leaning shoulders / torso -->
+  <polygon points="58,80 96,94 108,180 34,180 34,100" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- neck -->
+  <rect x="52" y="66" width="18" height="18" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- head, tilted forward -->
+  <ellipse cx="58" cy="46" rx="19" ry="21" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- raised torch shaft -->
+  <line x1="92" y1="150" x2="108" y2="40" stroke="#7A6E5A" stroke-width="5"/>
+  <!-- flame -->
+  <path d="M108,44 q-9,-20 6,-30 q-2,11 6,13 q5,-8 2,-18 q15,13 5,35 q-4,9 -19,0 z" fill="#FF5A1F" stroke="#0B0E11" stroke-width="2"/>
+  <path d="M108,36 q-4,-10 5,-15 q0,6 3,8 q2,-5 1,-10 q8,8 2,20 z" fill="#FFD08A"/>
+</svg>

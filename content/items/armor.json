@@ -1,0 +1,53 @@
+{
+  "_schema": "Armor items. slot:armor. Grants HP/integrity and sometimes physics resistance (magnetic_boots = shove resist).",
+  "items": [
+    {
+      "id": "scrap_vest",
+      "name": "Scrap Vest",
+      "slot": "armor",
+      "tier": 1,
+      "effects": [ { "kind": "stat_mod", "stat": "hp", "amount": 2 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "riot_plate",
+      "name": "Riot Plate",
+      "slot": "armor",
+      "tier": 3,
+      "effects": [ { "kind": "stat_mod", "stat": "hp", "amount": 4 }, { "kind": "first_hit_reduced", "amount": 2, "perFight": true } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "magnetic_boots",
+      "name": "Magnetic Boots",
+      "slot": "armor",
+      "tier": 2,
+      "effects": [ { "kind": "shove_resist", "amount": 2 }, { "kind": "status_immune_from_source", "status": "prone", "source": "flood" } ],
+      "physicsRiders": ["shove_resist"]
+    },
+    {
+      "id": "gas_mask",
+      "name": "Gas Mask",
+      "slot": "armor",
+      "tier": 2,
+      "effects": [ { "kind": "status_immune", "status": "poisoned" } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "thermal_suit",
+      "name": "Thermal Suit",
+      "slot": "armor",
+      "tier": 3,
+      "effects": [ { "kind": "status_immune", "status": "chilled" }, { "kind": "damage_resist", "damageType": "fire", "amount_pct": 25 } ],
+      "physicsRiders": []
+    },
+    {
+      "id": "ablative_harness",
+      "name": "Ablative Harness",
+      "slot": "armor",
+      "tier": 4,
+      "effects": [ { "kind": "stat_mod", "stat": "hp", "amount": 3 }, { "kind": "damage_resist", "damageType": "impact", "amount_pct": 25 } ],
+      "physicsRiders": ["impact_resist"]
+    }
+  ]
+}

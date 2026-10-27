@@ -1,0 +1,12 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- FIREBRAND (player). Bible §3.5 cyan ring #2EA7E0 + crimson accent #FF5A1F. Lean, leaning forward, flame. -->
+  <circle cx="48" cy="48" r="44" fill="#2EA7E0" opacity="0.18"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#2EA7E0" stroke-width="4"/>
+  <!-- lean forward-leaning body -->
+  <polygon points="38,30 56,40 52,72 36,68 34,46" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="42" cy="32" r="9" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- raised torch/banner flame -->
+  <line x1="60" y1="60" x2="66" y2="28" stroke="#7A6E5A" stroke-width="3"/>
+  <path d="M66,30 q-5,-12 4,-18 q-1,7 4,8 q3,-5 1,-11 q9,8 3,21 q-2,5 -12,0 z" fill="#FF5A1F" stroke="#0B0E11" stroke-width="1.5"/>
+  <path d="M66,26 q-2,-6 3,-9 q0,4 2,5 q1,-3 0,-6 q5,5 1,12 z" fill="#FFD08A"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- CAPTAIN/FINALE BOSS: The Conductor — flood_the_dais_then_shove. Key tell = FLOOD/RELAY (cyan). Relay-shielded body. -->
+  <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.16"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="4"/>
+  <circle cx="48" cy="48" r="40" fill="none" stroke="#3FC6D4" stroke-width="2" stroke-dasharray="3 4" opacity="0.85"/>
+  <circle cx="48" cy="48" r="34" fill="none" stroke="#E0432E" stroke-width="2" opacity="0.6"/>
+  <!-- draped imposing body -->
+  <polygon points="48,24 64,36 62,72 34,72 32,36" fill="#1C2630" stroke="#0B0E11" stroke-width="2.5"/>
+  <circle cx="48" cy="32" r="9" fill="#1C2630" stroke="#0B0E11" stroke-width="2"/>
+  <!-- peaked conductor's cap -->
+  <path d="M37 28 q11 -10 22 0 Z" fill="#0B0E11" stroke="#0B0E11" stroke-width="2"/>
+  <rect x="36" y="27" width="24" height="4" rx="1" fill="#3FC6D4" stroke="#0B0E11" stroke-width="1"/>
+  <!-- relay glow on chest -->
+  <circle cx="48" cy="50" r="6" fill="#3FC6D4" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- gold rank -->
+  <polygon points="48,60 60,67 48,65 36,67" fill="#C9A24A" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- FLOOD/RELAY key mote -->
+  <circle cx="72" cy="22" r="7" fill="#3FC6D4" stroke="#0B0E11" stroke-width="1.5"/>
+  <path d="M72 17 q4 5 0 7 q-4 -2 0 -7 Z" fill="#0B0E11"/>
+</svg>

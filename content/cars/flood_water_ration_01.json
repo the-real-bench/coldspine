@@ -1,0 +1,42 @@
+{
+  "id": "flood_water_ration_01",
+  "name": "Water Ration Car",
+  "type": "flood",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 3, "note": "ration crates" },
+      { "object": "crate", "x": 4, "y": 5 },
+      { "object": "bench", "x": 6, "y": 2 }
+    ],
+    "objects": [
+      { "object": "water_main", "x": 9, "y": 4, "note": "ration standpipe — the flood source" },
+      { "object": "junction_box", "x": 10, "y": 1, "isPowerSource": true }
+    ],
+    "hazards": [
+      { "hazard": "water", "at": { "x": 8, "y": 4 }, "note": "standing spill under the standpipe" },
+      { "hazard": "water", "at": { "x": 8, "y": 5 } },
+      { "hazard": "water", "at": { "x": 9, "y": 5 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 5 }, { "x": 2, "y": 4 } ],
+      "enemy": [ { "x": 8, "y": 2 }, { "x": 9, "y": 6 }, { "x": 7, "y": 4 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 8, "y": 2 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 6 } },
+    { "enemy": "hound", "at": { "x": 7, "y": 4 } }
+  ],
+  "rewardTable": "reward_flood_s1",
+  "allowedModifiers": ["overpressure", "loose_cargo", "cramped"],
+  "designNote": "Tail ration queue. Break the standpipe (anchored water_main, floodRadius 4) to sweep the queue, then shoot the junction box to electrify the standing spill — the section-1 tutorial for the flood->electrify chain."
+}

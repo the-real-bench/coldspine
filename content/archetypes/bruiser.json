@@ -1,0 +1,15 @@
+{
+  "id": "bruiser",
+  "name": "Bruiser",
+  "role": "frontline",
+  "baseStats": { "hp": 12, "move": 4, "accuracy": 55, "mass": "medium" },
+  "innateTrait": null,
+  "startingAbilities": ["slam", "heave"],
+  "abilityTree": [
+    ["bull_rush", "bracing"],
+    ["pin", "sweep"],
+    ["bodyguard", "demolition"]
+  ],
+  "capstone": "juggernaut",
+  "traitAffinity": ["brawler", "planted", "demolitions_expert", "tough", "hardened"]
+}

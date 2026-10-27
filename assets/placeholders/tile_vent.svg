@@ -1,0 +1,9 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- FIRE VENT (Hazard.VENT) — steel grille that jets fire on its cycle. #FF7A18 telegraph. -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="64,16 100,32 64,48 28,32" fill="#2A2A2E" stroke="#0B0E11" stroke-width="1.5"/>
+  <line x1="48" y1="28" x2="74" y2="40" stroke="#5A6470" stroke-width="2"/>
+  <line x1="56" y1="24" x2="82" y2="36" stroke="#5A6470" stroke-width="2"/>
+  <line x1="40" y1="32" x2="66" y2="44" stroke="#5A6470" stroke-width="2"/>
+  <path d="M60,30 q-2,-9 4,-13 q-1,6 3,7 q2,-4 0,-8 q6,5 3,15 z" fill="#FFD08A" stroke="#FF7A18" stroke-width="1"/>
+</svg>

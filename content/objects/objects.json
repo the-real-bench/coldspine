@@ -1,0 +1,243 @@
+{
+  "_schema": "ObjectDef per GDD §21. mass: light|medium|heavy|anchored. coverValue: 0 none / 1 half / 2 full. onBreak: none|flood|explode|collapse|spill_fire|topple. floodRadius if onBreak=flood. topple fields (fall_dir,height) per Sub-Spec E1.3 are an authored extension.",
+  "objects": [
+    {
+      "id": "fish_tank_large",
+      "name": "Large Aquarium",
+      "mass": "heavy",
+      "integrity": 4,
+      "coverValue": 2,
+      "onBreak": "flood",
+      "floodRadius": 3
+    },
+    {
+      "id": "fish_tank_small",
+      "name": "Small Fish Tank",
+      "mass": "medium",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "flood",
+      "floodRadius": 2
+    },
+    {
+      "id": "coolant_tank",
+      "name": "Coolant Tank",
+      "mass": "heavy",
+      "integrity": 5,
+      "coverValue": 2,
+      "onBreak": "flood",
+      "floodRadius": 3
+    },
+    {
+      "id": "water_main",
+      "name": "Water Main",
+      "mass": "anchored",
+      "integrity": 3,
+      "coverValue": 0,
+      "onBreak": "flood",
+      "floodRadius": 4
+    },
+    {
+      "id": "gas_main",
+      "name": "Gas Main",
+      "mass": "anchored",
+      "integrity": 3,
+      "coverValue": 0,
+      "onBreak": "spill_fire",
+      "spawnsHazard": "poison_gas",
+      "floodRadius": 0
+    },
+    {
+      "id": "barrel_explosive",
+      "name": "Explosive Barrel",
+      "mass": "medium",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "explode",
+      "break_param": 2
+    },
+    {
+      "id": "oxygen_tank",
+      "name": "Oxygen Tank",
+      "mass": "medium",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "explode",
+      "break_param": 2
+    },
+    {
+      "id": "crate",
+      "name": "Crate",
+      "mass": "medium",
+      "integrity": 3,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "mass": "light",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "chair",
+      "name": "Chair",
+      "mass": "light",
+      "integrity": 1,
+      "coverValue": 0,
+      "onBreak": "none"
+    },
+    {
+      "id": "serving_cart",
+      "name": "Serving Cart",
+      "mass": "light",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "glass_partition",
+      "name": "Glass Partition",
+      "mass": "anchored",
+      "integrity": 1,
+      "coverValue": 2,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "junction_box",
+      "name": "Junction Box",
+      "mass": "anchored",
+      "integrity": 2,
+      "coverValue": 0,
+      "onBreak": "none",
+      "isPowerSource": true
+    },
+    {
+      "id": "weight_rack",
+      "name": "Loaded Weight Rack",
+      "mass": "heavy",
+      "integrity": 4,
+      "coverValue": 2,
+      "onBreak": "topple",
+      "fall_dir": "away_from_impact",
+      "height": 3
+    },
+    {
+      "id": "marble_statue",
+      "name": "Marble Statue",
+      "mass": "heavy",
+      "integrity": 5,
+      "coverValue": 2,
+      "onBreak": "topple",
+      "fall_dir": "away_from_impact",
+      "height": 2
+    },
+    {
+      "id": "chandelier",
+      "name": "Chandelier",
+      "mass": "heavy",
+      "integrity": 2,
+      "coverValue": 0,
+      "onBreak": "topple",
+      "fall_dir": "down",
+      "height": 2
+    },
+    {
+      "id": "tree",
+      "name": "Tree",
+      "mass": "anchored",
+      "integrity": 4,
+      "coverValue": 2,
+      "onBreak": "topple",
+      "fall_dir": "away_from_impact",
+      "height": 4,
+      "flammable": true
+    },
+    {
+      "id": "hedge_wall",
+      "name": "Hedge Wall",
+      "mass": "anchored",
+      "integrity": 3,
+      "coverValue": 2,
+      "onBreak": "collapse",
+      "flammable": true,
+      "blocksLoS": true
+    },
+    {
+      "id": "hedge_sculpture",
+      "name": "Hedge Sculpture",
+      "mass": "heavy",
+      "integrity": 3,
+      "coverValue": 2,
+      "onBreak": "topple",
+      "fall_dir": "away_from_impact",
+      "height": 2,
+      "flammable": true
+    },
+    {
+      "id": "bookshelf",
+      "name": "Bookshelf",
+      "mass": "heavy",
+      "integrity": 3,
+      "coverValue": 2,
+      "onBreak": "topple",
+      "fall_dir": "away_from_impact",
+      "height": 3,
+      "flammable": true
+    },
+    {
+      "id": "pottery_vase",
+      "name": "Pottery Vase",
+      "mass": "light",
+      "integrity": 1,
+      "coverValue": 0,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "alcohol_barrel",
+      "name": "Alcohol Barrel",
+      "mass": "medium",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "explode",
+      "break_param": 2,
+      "spawnsHazard": "fire"
+    },
+    {
+      "id": "planter",
+      "name": "Planter",
+      "mass": "medium",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "bench",
+      "name": "Bench",
+      "mass": "light",
+      "integrity": 2,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "locker",
+      "name": "Locker",
+      "mass": "medium",
+      "integrity": 3,
+      "coverValue": 1,
+      "onBreak": "collapse"
+    },
+    {
+      "id": "thin_ice",
+      "name": "Thin Ice",
+      "mass": "anchored",
+      "integrity": 1,
+      "coverValue": 0,
+      "onBreak": "flood",
+      "floodRadius": 1,
+      "note": "cracks and drops occupants: eject-style fall + Soaked + Chilled (Sub-Spec E3)"
+    }
+  ]
+}

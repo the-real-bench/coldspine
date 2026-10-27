@@ -1,0 +1,13 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- STEWARD (player). Bible §3.5 cyan ring #2EA7E0 + teal accent #7EC8E3. Medic cross. -->
+  <circle cx="48" cy="48" r="44" fill="#2EA7E0" opacity="0.18"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#2EA7E0" stroke-width="4"/>
+  <!-- body -->
+  <ellipse cx="48" cy="52" rx="14" ry="21" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="48" cy="35" r="9" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- medic cross on chest -->
+  <rect x="43" y="44" width="10" height="22" rx="1.5" fill="#7EC8E3" stroke="#0B0E11" stroke-width="1.5"/>
+  <rect x="37" y="50" width="22" height="10" rx="1.5" fill="#7EC8E3" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- raised supportive hand -->
+  <circle cx="66" cy="40" r="4" fill="#7EC8E3" stroke="#0B0E11" stroke-width="1.5"/>
+</svg>

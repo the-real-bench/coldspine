@@ -1,0 +1,40 @@
+{
+  "id": "combat_bunk_stacks_01",
+  "name": "Bunk Stacks",
+  "type": "combat",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "locker", "x": 5, "y": 2, "note": "bunk partition row A" },
+      { "object": "locker", "x": 5, "y": 3 },
+      { "object": "locker", "x": 7, "y": 4, "note": "bunk partition row B" },
+      { "object": "locker", "x": 7, "y": 5 },
+      { "object": "crate", "x": 3, "y": 5 },
+      { "object": "bench", "x": 4, "y": 1 }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 6, "y": 6 },
+      { "object": "barrel_explosive", "x": 9, "y": 2 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 5 }, { "x": 2, "y": 4 } ],
+      "enemy": [ { "x": 8, "y": 2 }, { "x": 9, "y": 5 }, { "x": 8, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 8, "y": 2 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 5 } },
+    { "enemy": "hound", "at": { "x": 8, "y": 6 } }
+  ],
+  "rewardTable": "reward_combat_s1",
+  "allowedModifiers": ["cramped", "flickering_lights", "loose_cargo", "sympathizers"],
+  "designNote": "Tail slum sleeping car. Locker partition rows channel shoves into corridor slams; the barrel by the rear guard rewards a displacement chain. Winnable with zero gunfire by slamming guards into the partitions."
+}

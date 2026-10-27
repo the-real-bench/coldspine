@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- CHILLED (S_CHILLED) #8FD4E8 — thin snowflake -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#8FD4E8" stroke="#0B0E11" stroke-width="2"/>
+  <g stroke="#F2F4F6" stroke-width="1.6" stroke-linecap="round">
+    <line x1="12" y1="4" x2="12" y2="20"/>
+    <line x1="5" y1="8" x2="19" y2="16"/>
+    <line x1="19" y1="8" x2="5" y2="16"/>
+    <polyline points="9,5 12,7 15,5" fill="none"/>
+    <polyline points="9,19 12,17 15,19" fill="none"/>
+  </g>
+</svg>

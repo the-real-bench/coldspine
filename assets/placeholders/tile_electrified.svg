@@ -1,0 +1,14 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- ELECTRIFIED WATER (L_WATER + L_ELECTRIFIED). Bible §3.3 — the marquee combo.
+       Blue water wash + #FFE14D arc lattice + #E8FBFF highlights -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="64,1 127,32 64,63 1,32" fill="#2E8BC0" opacity="0.6"/>
+  <!-- arc lattice -->
+  <polyline points="20,32 36,24 44,34 60,22 70,34 86,24 96,33 108,28" fill="none" stroke="#FFE14D" stroke-width="2.5"/>
+  <polyline points="20,32 36,24 44,34 60,22 70,34 86,24 96,33 108,28" fill="none" stroke="#E8FBFF" stroke-width="1"/>
+  <polyline points="40,44 52,38 60,46 74,38 84,46" fill="none" stroke="#FFE14D" stroke-width="2"/>
+  <polyline points="40,44 52,38 60,46 74,38 84,46" fill="none" stroke="#E8FBFF" stroke-width="0.8"/>
+  <circle cx="36" cy="24" r="2" fill="#E8FBFF"/>
+  <circle cx="70" cy="34" r="2" fill="#E8FBFF"/>
+  <circle cx="96" cy="33" r="2" fill="#E8FBFF"/>
+</svg>

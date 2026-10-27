@@ -1,0 +1,28 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- ECON-SCREEN FLAVOR ART (W5-15). Generic surveillance-feed view INTO the current car, filling
+       the empty left half of the shop/workshop/bourgeois/event/rest takeovers. Drop-in per-screen
+       final art wins at assets/final/car_<screen>.png; this generic placeholder is the fallback.
+       ART_BIBLE chrome: FRAME_BG #0B0E11 / FRAME_BORDER #1C2630 / FRAME_INSET #243240, AMBER #FFB000
+       type, CYAN #3FC6D4 data, DIM #5A6470. The run_screens code overlays the car NAME. -->
+  <rect x="0" y="0" width="320" height="180" fill="#0B0E11"/>
+  <rect x="2" y="2" width="316" height="176" fill="none" stroke="#1C2630" stroke-width="3"/>
+  <!-- interior perspective of a train car (one-point vanishing corridor) -->
+  <polygon points="30,30 290,30 230,150 90,150" fill="#243240" opacity="0.35"/>
+  <line x1="30" y1="30" x2="90" y2="150" stroke="#1C2630" stroke-width="2"/>
+  <line x1="290" y1="30" x2="230" y2="150" stroke="#1C2630" stroke-width="2"/>
+  <line x1="70" y1="30" x2="112" y2="150" stroke="#1C2630" stroke-width="1.5"/>
+  <line x1="250" y1="30" x2="208" y2="150" stroke="#1C2630" stroke-width="1.5"/>
+  <!-- far doorway to the next car -->
+  <rect x="146" y="60" width="28" height="60" fill="#0B0E11" stroke="#3FC6D4" stroke-width="2"/>
+  <line x1="160" y1="60" x2="160" y2="120" stroke="#3FC6D4" stroke-width="1" opacity="0.5"/>
+  <!-- ceiling light strips -->
+  <rect x="120" y="34" width="80" height="4" fill="#FFB000" opacity="0.55"/>
+  <!-- corner camera ticks (§5 CRT frame idiom) -->
+  <path d="M10,10 h16 M10,10 v16" stroke="#FFB000" stroke-width="2" fill="none"/>
+  <path d="M310,10 h-16 M310,10 v16" stroke="#FFB000" stroke-width="2" fill="none"/>
+  <path d="M10,170 h16 M10,170 v-16" stroke="#FFB000" stroke-width="2" fill="none"/>
+  <path d="M310,170 h-16 M310,170 v-16" stroke="#FFB000" stroke-width="2" fill="none"/>
+  <!-- REC pip -->
+  <circle cx="286" cy="18" r="4" fill="#FF3B3B" opacity="0.85"/>
+  <text x="16" y="168" fill="#5A6470" font-family="monospace" font-size="11">CAM // CAR FEED</text>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "id": "combat_boiler_pass_01",
+  "name": "Boiler Passage",
+  "type": "combat",
+  "section": 2,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "locker", "x": 6, "y": 5 },
+      { "object": "barrel_explosive", "x": 10, "y": 3, "note": "fuel drum mid-passage" }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 12, "y": 6, "isPowerSource": true }
+    ],
+    "hazards": [
+      { "hazard": "fire_vent", "at": { "x": 8, "y": 2 }, "note": "boiler flue cycles fire" },
+      { "hazard": "fire_vent", "at": { "x": 8, "y": 5 } },
+      { "hazard": "debris", "at": { "x": 5, "y": 4 }, "note": "spilled clinker — scrappy cover" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 9, "y": 2 }, { "x": 11, "y": 4 }, { "x": 9, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 2 } },
+    { "enemy": "net_gunner", "at": { "x": 11, "y": 4 } },
+    { "enemy": "riot_shield", "at": { "x": 9, "y": 5 } }
+  ],
+  "rewardTable": "reward_combat_s2",
+  "allowedModifiers": ["cramped", "furnace_row", "flickering_lights", "loose_cargo"],
+  "designNote": "Third-class SHOVE-INTO-FIRE teacher. Two boiler flues (fire_vent) sit one tile west of the flanking guards; shove them off the passage into the cycling flame, or chain the mid-passage fuel drum. A net gunner holds the depth. Distinct comp + verb from the gap gantry so S2 combat is not one identical room."
+}

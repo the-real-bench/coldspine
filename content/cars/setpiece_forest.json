@@ -1,0 +1,43 @@
+{
+  "id": "setpiece_forest",
+  "name": "Hunting Preserve",
+  "type": "combat",
+  "section": 3,
+  "gridSize": { "w": 16, "h": 10 },
+  "reconTell": "PRESERVE",
+  "reconTags": ["FLAMMABLE", "CONCEAL"],
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 4, "y": 2, "w": 3, "h": 2 }, "concealment": true, "note": "underbrush — blocks LoS, passable" },
+      { "region": { "x": 9, "y": 5, "w": 3, "h": 2 }, "concealment": true },
+      { "region": { "x": 1, "y": 1, "w": 14, "h": 8 }, "friction": 1, "note": "soft soil — difficult terrain" }
+    ],
+    "cover": [
+      { "object": "tree", "x": 5, "y": 5 },
+      { "object": "tree", "x": 8, "y": 3 },
+      { "object": "tree", "x": 11, "y": 4 },
+      { "object": "tree", "x": 6, "y": 7 }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 12, "y": 3 }, { "x": 13, "y": 5 }, { "x": 12, "y": 7 } ],
+      "neutral": [ { "x": 8, "y": 8 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "sniper", "at": { "x": 13, "y": 5 } },
+    { "enemy": "enforcer", "at": { "x": 12, "y": 3 } },
+    { "enemy": "truncheon_guard", "at": { "x": 12, "y": 7 } }
+  ],
+  "rewardTable": "reward_setpiece_s3",
+  "allowedModifiers": ["flickering_lights", "loose_cargo", "sympathizers"],
+  "designNote": "Fell a tree (topple) across a lane for a line-crush. Fire spreads fast on flammable trees/soil. Optional neutral game animals (E1.7)."
+}

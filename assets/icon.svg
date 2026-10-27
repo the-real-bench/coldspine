@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+	<!-- COLDSPINE placeholder app icon (authored in-repo, no external assets).
+	     Motif: the train as a SPINE — a vertical column of coupled cars (vertebrae)
+	     climbing from the tail (bottom) toward the Engine (top), on the frozen line.
+	     Palette mirrors the ops-console CRT look: deep cold blue field, ice-cyan
+	     spine, amber Engine signal. Replace with final art in Phase 7. -->
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#101d2e"/>
+			<stop offset="1" stop-color="#070c14"/>
+		</linearGradient>
+		<linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#7fdbea" stop-opacity="0.55"/>
+			<stop offset="1" stop-color="#7fdbea" stop-opacity="0.08"/>
+		</linearGradient>
+	</defs>
+
+	<!-- field -->
+	<rect x="0" y="0" width="512" height="512" rx="96" fill="url(#bg)"/>
+	<rect x="14" y="14" width="484" height="484" rx="84" fill="none" stroke="#1d3550" stroke-width="4"/>
+
+	<!-- the line: twin rails converging upward toward the Engine -->
+	<path d="M 196 470 L 236 96" stroke="url(#rail)" stroke-width="8" fill="none"/>
+	<path d="M 316 470 L 276 96" stroke="url(#rail)" stroke-width="8" fill="none"/>
+
+	<!-- ENGINE signal at the head of the line -->
+	<circle cx="256" cy="84" r="30" fill="#0b1420" stroke="#e8a33d" stroke-width="6"/>
+	<circle cx="256" cy="84" r="12" fill="#e8a33d"/>
+
+	<!-- the spine: five coupled cars (vertebrae), tail at the bottom -->
+	<g stroke="#9fe8f2" stroke-width="6" fill="#14283c">
+		<!-- couplers -->
+		<line x1="256" y1="114" x2="256" y2="146" stroke="#5b8ca6"/>
+		<line x1="256" y1="210" x2="256" y2="236" stroke="#5b8ca6"/>
+		<line x1="256" y1="300" x2="256" y2="326" stroke="#5b8ca6"/>
+		<line x1="256" y1="390" x2="256" y2="416" stroke="#5b8ca6"/>
+		<!-- cars, growing slightly toward the tail (the uprising climbs) -->
+		<rect x="216" y="146" width="80" height="64" rx="10"/>
+		<rect x="210" y="236" width="92" height="64" rx="10"/>
+		<rect x="204" y="326" width="104" height="64" rx="10"/>
+		<rect x="198" y="416" width="116" height="54" rx="10"/>
+	</g>
+
+	<!-- car windows: the lit tail car (the cell) vs dark held cars -->
+	<g fill="#0b1420">
+		<rect x="232" y="162" width="20" height="14" rx="3"/>
+		<rect x="260" y="162" width="20" height="14" rx="3"/>
+		<rect x="228" y="252" width="20" height="14" rx="3"/>
+		<rect x="264" y="252" width="20" height="14" rx="3"/>
+		<rect x="222" y="342" width="20" height="14" rx="3"/>
+		<rect x="270" y="342" width="20" height="14" rx="3"/>
+	</g>
+	<g fill="#e8a33d">
+		<rect x="216" y="432" width="20" height="14" rx="3"/>
+		<rect x="246" y="432" width="20" height="14" rx="3"/>
+		<rect x="276" y="432" width="20" height="14" rx="3"/>
+	</g>
+
+	<!-- frost ticks flanking the spine -->
+	<g stroke="#2c4a66" stroke-width="6" stroke-linecap="round">
+		<line x1="128" y1="180" x2="156" y2="180"/>
+		<line x1="356" y1="180" x2="384" y2="180"/>
+		<line x1="118" y1="272" x2="150" y2="272"/>
+		<line x1="362" y1="272" x2="394" y2="272"/>
+		<line x1="110" y1="364" x2="146" y2="364"/>
+		<line x1="366" y1="364" x2="402" y2="364"/>
+	</g>
+</svg>

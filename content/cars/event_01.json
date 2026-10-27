@@ -1,0 +1,35 @@
+{
+  "id": "event_01",
+  "name": "Maintenance Junction",
+  "type": "event",
+  "section": 2,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [],
+    "objects": [
+      { "object": "junction_box", "x": 6, "y": 4 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "eventBeat": {
+    "style": "ftl_branching_text",
+    "prompt": "A jammed supply locker sits in the maintenance junction — the catch looks forced.",
+    "options": [
+      { "id": "pry", "label": "[ PRY IT GENTLY ]", "outcome": "resource", "kind": "tools", "amount": 1, "consequence": "+1 tools, no risk" },
+      { "id": "force", "label": "[ FORCE IT OPEN ]", "outcome": "resource", "kind": "scrip", "amount": 8, "order": "loud_breach", "consequence": "a scrip cache — but it trips an alarm (Order rises)" }
+    ]
+  },
+  "rewardTable": "reward_event",
+  "allowedModifiers": []
+}

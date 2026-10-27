@@ -1,0 +1,32 @@
+{
+  "id": "bourgeois_steerage_01",
+  "name": "Steerage Commons",
+  "type": "bourgeois",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "table", "x": 5, "y": 3 },
+      { "object": "bench", "x": 6, "y": 4 },
+      { "object": "crate", "x": 8, "y": 2 }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "civilian": [ { "x": 6, "y": 3 }, { "x": 8, "y": 5 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "moralBeat": { "spare": "gear_intel_buff", "kill": "instant_scrip_plus_order" },
+  "rewardTable": "reward_bourgeois",
+  "allowedModifiers": ["cramped"],
+  "designNote": "Section-1 civilian car (bourgeois-type deck entry for the Tail): packed steerage families hoarding what little they have. Same moral beat rail as the lounge — rob them for scrip+Order or spare them for intel."
+}

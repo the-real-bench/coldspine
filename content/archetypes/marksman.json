@@ -1,0 +1,15 @@
+{
+  "id": "marksman",
+  "name": "Marksman",
+  "role": "ranged",
+  "baseStats": { "hp": 9, "move": 4, "accuracy": 80, "mass": "light" },
+  "innateTrait": null,
+  "startingAbilities": ["aimed_shot", "overwatch"],
+  "abilityTree": [
+    ["opportunist", "steady"],
+    ["lattice", "pierce"],
+    ["killzone", "soaked_spark"]
+  ],
+  "capstone": "deadeye",
+  "traitAffinity": ["steady_hands", "crack_shot", "frail_veteran", "shaky"]
+}

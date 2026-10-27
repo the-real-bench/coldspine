@@ -1,0 +1,36 @@
+{
+  "id": "captain_s1_tail_warden",
+  "name": "The Tail Gate",
+  "type": "captain",
+  "section": 1,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 5, "y": 3 },
+      { "object": "crate", "x": 5, "y": 5 }
+    ],
+    "objects": [
+      { "object": "fish_tank_small", "x": 8, "y": 2, "note": "soak source for unshovable_until_soaked key" },
+      { "object": "junction_box", "x": 12, "y": 4, "isPowerSource": true }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 10, "y": 4 }, { "x": 9, "y": 3 }, { "x": 9, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "captain_tail_warden", "at": { "x": 10, "y": 4 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 3 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 5 } }
+  ],
+  "rewardTable": "reward_captain_equip_s1",
+  "allowedModifiers": ["lockdown"],
+  "designNote": "Captain key: unshovable_until_soaked — break the fish tank to Soak the Warden, then shove. Section 1 gate. Reward is an EQUIPMENT drop (reward_captain_equip_s1): every run clears this gate, so a weapon/armor reliably reaches the cell even on a shopless line (W3-2)."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "setpiece_spa",
+  "name": "Spa & Bathhouse",
+  "type": "flood",
+  "section": 4,
+  "reconTell": "SPA",
+  "reconTags": ["STEAM", "WATER", "AMBUSH"],
+  "ambushStart": true,
+  "inCarFog": true,
+  "gridSize": { "w": 16, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 5, "y": 3, "w": 3, "h": 3 }, "waterLayer": true, "hazard": "scald_tile", "note": "hot pool — built-in Soak + Scald" },
+      { "region": { "x": 9, "y": 5, "w": 2, "h": 2 }, "waterLayer": true, "note": "soaking bath" },
+      { "region": { "x": 2, "y": 1, "w": 13, "h": 8 }, "friction": 1, "note": "slippery wet tile (light) — approximated as +1" }
+    ],
+    "cover": [
+      { "object": "locker", "x": 3, "y": 7 },
+      { "object": "bench", "x": 11, "y": 2 }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 13, "y": 3, "isPowerSource": true },
+      { "object": "coolant_tank", "x": 8, "y": 1 }
+    ],
+    "hazards": [
+      { "hazard": "steam_vent", "at": { "x": 6, "y": 6 } },
+      { "hazard": "steam_vent", "at": { "x": 12, "y": 6 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 10, "y": 3 }, { "x": 12, "y": 5 }, { "x": 9, "y": 7 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 10, "y": 3 }, "startsUnaware": true },
+    { "enemy": "enforcer", "at": { "x": 12, "y": 5 }, "startsUnaware": true },
+    { "enemy": "riot_shield", "at": { "x": 9, "y": 7 }, "startsUnaware": true }
+  ],
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["zero_stabilizer", "flickering_lights"],
+  "designNote": "Wet-room combo: steam to Blind, flood to Soak, spark to Shock — or shove into a scalding pool. Enemies start Unaware (ambush opening, E1.7) — a mercy beat vs. a brutal flood-and-shock."
+}

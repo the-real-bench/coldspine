@@ -1,0 +1,37 @@
+{
+  "id": "captain_s4_majordomo",
+  "name": "The First-Class Gate",
+  "type": "captain",
+  "section": 4,
+  "gridSize": { "w": 16, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 7, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 15, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "marble_statue", "x": 11, "y": 4, "note": "the Majordomo's cover — strip it to flank" },
+      { "object": "table", "x": 6, "y": 3 },
+      { "object": "table", "x": 6, "y": 5 }
+    ],
+    "objects": [
+      { "object": "chandelier", "x": 8, "y": 2, "overhead": true }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 12, "y": 4 }, { "x": 10, "y": 3 }, { "x": 10, "y": 5 }, { "x": 13, "y": 2 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "captain_majordomo", "at": { "x": 12, "y": 4 } },
+    { "enemy": "enforcer", "at": { "x": 10, "y": 3 } },
+    { "enemy": "sniper", "at": { "x": 13, "y": 2 } },
+    { "enemy": "riot_shield", "at": { "x": 10, "y": 5 } }
+  ],
+  "rewardTable": "reward_captain_s4",
+  "allowedModifiers": ["lockdown", "laser_sec_grid"],
+  "designNote": "Captain key: destroy_his_cover_then_flank — the Majordomo is shielded behind the marble statue; topple/destroy his cover, then flank to bypass Shield Wall."
+}

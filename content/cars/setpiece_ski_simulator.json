@@ -1,0 +1,44 @@
+{
+  "id": "setpiece_ski_simulator",
+  "name": "Alpine Sim",
+  "type": "flood",
+  "section": 4,
+  "gridSize": { "w": 16, "h": 10 },
+  "reconTell": "ALPINE SIM",
+  "reconTags": ["SLOPE", "COLD"],
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 1, "y": 1, "w": 14, "h": 8 }, "slope": [-1, 0], "note": "down-slope toward x=1 (the ledge end)" },
+      { "region": { "x": 5, "y": 2, "w": 3, "h": 3 }, "friction": 1, "status": "chilled", "note": "deep snow patch" },
+      { "region": { "x": 3, "y": 6, "w": 4, "h": 1 }, "hazard": "conveyor", "beltDir": [1, 0], "note": "uphill lift belt" }
+    ],
+    "cover": [
+      { "object": "crate", "x": 9, "y": 3, "anchored": true, "note": "lift pylon" },
+      { "object": "crate", "x": 11, "y": 6, "anchored": true, "note": "snow-gun housing" }
+    ],
+    "objects": [
+      { "object": "coolant_tank", "x": 14, "y": 2, "note": "avalanche reservoir (snow-sweep trigger)", "onBreakOverride": "avalanche" }
+    ],
+    "hazards": [
+      { "hazard": "gap", "region": { "x": 0, "y": 4, "w": 1, "h": 2 }, "note": "down-slope ledge eject" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 14, "y": 4 }, { "x": 14, "y": 6 }, { "x": 13, "y": 5 } ],
+      "enemy": [ { "x": 6, "y": 3 }, { "x": 8, "y": 6 }, { "x": 5, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "hound", "at": { "x": 6, "y": 3 } },
+    { "enemy": "enforcer", "at": { "x": 8, "y": 6 } },
+    { "enemy": "truncheon_guard", "at": { "x": 5, "y": 5 } }
+  ],
+  "betrayerHook": "conductors_kin",
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["open_roof", "zero_stabilizer", "loose_cargo"]
+}

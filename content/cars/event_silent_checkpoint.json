@@ -1,0 +1,84 @@
+{
+  "id": "event_silent_checkpoint",
+  "name": "Silent Checkpoint",
+  "type": "event",
+  "section": 1,
+  "gridSize": {
+    "w": 12,
+    "h": 8
+  },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      }
+    ],
+    "cover": [
+      {
+        "object": "crate",
+        "x": 6,
+        "y": 3
+      }
+    ],
+    "objects": [],
+    "spawnPoints": {
+      "player": [
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        }
+      ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "eventBeat": {
+    "style": "ftl_branching_text",
+    "prompt": "A tail-section checkpoint sits dark and silent ahead. No guards, no chatter. Too quiet.",
+    "options": [
+      {
+        "id": "hold",
+        "label": "[ HOLD BACK, SCOUT ]",
+        "outcome": "resource",
+        "kind": "tools",
+        "amount": 2,
+        "consequence": "+2 tools of salvaged intel; you avoid the trap"
+      },
+      {
+        "id": "push",
+        "label": "[ PUSH THROUGH ]",
+        "outcome": "ambush",
+        "ambush": "combat_security_01",
+        "consequence": "it's a trap \u2014 guards ambush the cell (routes straight to combat)"
+      }
+    ]
+  },
+  "rewardTable": "reward_event",
+  "allowedModifiers": []
+}

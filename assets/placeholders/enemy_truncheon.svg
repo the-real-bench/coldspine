@@ -1,0 +1,9 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- TRUNCHEON GUARD (enemy). Bible §3.5 red ring #E0432E. Basic melee, easy to slam. -->
+  <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.14"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="4"/>
+  <ellipse cx="48" cy="52" rx="15" ry="21" fill="#3A2A2A" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="48" cy="34" r="9" fill="#3A2A2A" stroke="#0B0E11" stroke-width="2"/>
+  <!-- short baton -->
+  <rect x="62" y="44" width="6" height="22" rx="2" transform="rotate(20 65 55)" fill="#8A8A92" stroke="#0B0E11" stroke-width="1.5"/>
+</svg>

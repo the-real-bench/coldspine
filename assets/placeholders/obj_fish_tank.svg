@@ -1,0 +1,17 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- FISH TANK (object). Bible §3.5 grey #9AA3AD, no glow. onBreak: FLOOD — must SCREAM "flood me". -->
+  <!-- glass tank body -->
+  <rect x="20" y="22" width="56" height="52" rx="3" fill="#2E8BC0" opacity="0.55" stroke="#9AA3AD" stroke-width="3"/>
+  <rect x="20" y="22" width="56" height="52" rx="3" fill="none" stroke="#0B0E11" stroke-width="1"/>
+  <!-- water surface line -->
+  <line x1="22" y1="32" x2="74" y2="32" stroke="#7EC8E3" stroke-width="2"/>
+  <!-- fish silhouettes -->
+  <g fill="#1A4A66">
+    <ellipse cx="38" cy="46" rx="6" ry="3"/><polygon points="32,46 27,43 27,49"/>
+    <ellipse cx="56" cy="58" rx="5" ry="2.5"/><polygon points="61,58 66,55 66,61"/>
+  </g>
+  <!-- stress crack (the "floodable" tell) -->
+  <polyline points="48,24 52,38 46,50 54,64 50,72" fill="none" stroke="#E8FBFF" stroke-width="1.5"/>
+  <!-- integrity pips -->
+  <g fill="#9AA3AD"><rect x="26" y="80" width="9" height="4"/><rect x="38" y="80" width="9" height="4"/><rect x="50" y="80" width="9" height="4"/></g>
+</svg>

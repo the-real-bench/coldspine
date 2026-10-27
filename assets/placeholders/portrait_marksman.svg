@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- MARKSMAN draft portrait (W5-1). Character art layer (NOT the 64px board token).
+       Bible §3.5 player cyan wash + green accent #5FA86A. Slim, poised, long rifle line. -->
+  <rect x="0" y="0" width="140" height="180" fill="#0B0E11"/>
+  <rect x="0" y="0" width="140" height="180" fill="#2EA7E0" opacity="0.07"/>
+  <!-- slim shoulders / torso -->
+  <polygon points="66,78 98,96 100,180 40,180 42,96" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- neck -->
+  <rect x="58" y="64" width="18" height="18" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- narrow head -->
+  <ellipse cx="66" cy="44" rx="18" ry="22" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- long diagonal rifle across the body -->
+  <rect x="30" y="118" width="96" height="7" rx="2" transform="rotate(-27 78 121)" fill="#5FA86A" stroke="#0B0E11" stroke-width="2"/>
+  <!-- scope glint over the eye -->
+  <circle cx="76" cy="40" r="5" fill="#5FA86A" stroke="#0B0E11" stroke-width="2"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- CRATE (object). Bible §3.5 grey ring. Half cover, onBreak: COLLAPSE to debris. -->
+  <rect x="24" y="30" width="48" height="44" rx="2" fill="#6E6354" stroke="#9AA3AD" stroke-width="3"/>
+  <rect x="24" y="30" width="48" height="44" rx="2" fill="none" stroke="#0B0E11" stroke-width="1"/>
+  <!-- plank seams -->
+  <line x1="24" y1="44" x2="72" y2="44" stroke="#4E4538" stroke-width="2"/>
+  <line x1="24" y1="60" x2="72" y2="60" stroke="#4E4538" stroke-width="2"/>
+  <line x1="48" y1="30" x2="48" y2="74" stroke="#4E4538" stroke-width="2"/>
+  <!-- corner brackets -->
+  <g fill="#8A7E6A"><rect x="26" y="32" width="6" height="6"/><rect x="64" y="32" width="6" height="6"/><rect x="26" y="66" width="6" height="6"/><rect x="64" y="66" width="6" height="6"/></g>
+  <!-- integrity pips -->
+  <g fill="#9AA3AD"><rect x="34" y="80" width="8" height="4"/><rect x="44" y="80" width="8" height="4"/><rect x="54" y="80" width="8" height="4"/></g>
+</svg>

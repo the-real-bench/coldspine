@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="monospace">
+  <!-- OPS-CONSOLE HUD MOCK. Bible §2/§5/§6. The surveillance/ops-console frame (GDD §3.1, §16).
+       Regions: camera-ID header · recon strip (right) · comms log (bottom-left) · AP/order strip
+       (bottom-center) · Order meter (top-right) · scanline overlay. Colors per bible. -->
+  <defs>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="3" fill="#000000" opacity="0"/>
+      <rect width="4" height="1" fill="#000000" opacity="0.28"/>
+    </pattern>
+    <radialGradient id="vig" cx="50%" cy="48%" r="65%">
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1280" height="720" fill="#0A0D10"/>
+
+  <!-- ============ THE FEED (center play space) ============ -->
+  <rect x="20" y="64" width="940" height="520" fill="#10161B"/>
+  <!-- a few iso floor tiles as a stand-in feed -->
+  <g stroke="#0B0E11" stroke-width="2">
+    <g transform="translate(360,200)">
+      <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048"/>
+      <polygon points="192,1 255,32 192,63 129,32" fill="#3A4048"/>
+      <polygon points="128,33 191,64 128,95 65,64" fill="#3A4048"/>
+      <polygon points="256,33 319,64 256,95 193,64" fill="#2E8BC0" opacity="0.6"/>
+      <polygon points="192,65 255,96 192,127 129,96" fill="#2E8BC0" opacity="0.6"/>
+    </g>
+  </g>
+  <!-- player token (cyan) + enemy token (red) on the feed -->
+  <g transform="translate(452,236) scale(0.42)">
+    <circle cx="48" cy="48" r="44" fill="#2EA7E0" opacity="0.18"/><circle cx="48" cy="48" r="44" fill="none" stroke="#2EA7E0" stroke-width="6"/>
+    <polygon points="48,22 72,34 72,62 48,74 24,62 24,34" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+    <rect x="30" y="42" width="36" height="12" fill="#C26A2A" stroke="#0B0E11" stroke-width="3"/>
+  </g>
+  <g transform="translate(584,300) scale(0.42)">
+    <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.16"/><circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="6"/>
+    <ellipse cx="48" cy="52" rx="15" ry="21" fill="#3A2A2A" stroke="#0B0E11" stroke-width="3"/><circle cx="48" cy="34" r="9" fill="#3A2A2A" stroke="#0B0E11" stroke-width="3"/>
+  </g>
+  <!-- physics preview ghost trajectory (dotted, faction-tinted, 50%) -->
+  <polyline points="470,256 540,290 612,322" fill="none" stroke="#2EA7E0" stroke-width="3" stroke-dasharray="4 6" opacity="0.6"/>
+  <polygon points="612,322 604,316 604,328" fill="#2EA7E0" opacity="0.6"/>
+  <text x="40" y="560" fill="#5A6470" font-size="13">[ FEED — iso car render · scanlines + grain overlay · physics-preview ghost shown ]</text>
+
+  <!-- ============ CAMERA-ID HEADER (top bar) ============ -->
+  <rect x="20" y="20" width="1240" height="36" fill="#0B0E11" stroke="#1C2630" stroke-width="1"/>
+  <rect x="20" y="20" width="1240" height="3" fill="#243240"/>
+  <circle cx="38" cy="38" r="6" fill="#FF3B3B"/>
+  <text x="52" y="43" fill="#FF3B3B" font-size="15" font-weight="bold">REC</text>
+  <text x="98" y="43" fill="#FFB000" font-size="17" font-weight="bold">CAR 07 — COOLANT BAY</text>
+  <text x="360" y="43" fill="#3FC6D4" font-size="14">SEC 2 · THIRD CLASS</text>
+  <text x="560" y="43" fill="#5A6470" font-size="14">00:14:22:07</text>
+  <!-- signal bars -->
+  <g fill="#3FC6D4"><rect x="700" y="36" width="3" height="6"/><rect x="705" y="32" width="3" height="10"/><rect x="710" y="28" width="3" height="14"/><rect x="715" y="33" width="3" height="9" fill="#2A3038"/></g>
+  <!-- corner ticks -->
+  <g stroke="#3FC6D4" stroke-width="1.5"><path d="M24,24 h8 M24,24 v8"/><path d="M1256,24 h-8 M1256,24 v8"/></g>
+
+  <!-- ============ ORDER METER (top-right) ============ -->
+  <rect x="980" y="64" width="280" height="58" fill="#0B0E11" stroke="#1C2630" stroke-width="1"/>
+  <text x="996" y="86" fill="#FFB000" font-size="13">ORDER</text>
+  <rect x="996" y="94" width="248" height="14" fill="#1A1E22" stroke="#2A3038" stroke-width="1"/>
+  <rect x="996" y="94" width="96" height="14" fill="#3FC6D4"/>
+  <rect x="1092" y="94" width="40" height="14" fill="#C2A03A"/>
+  <text x="1140" y="105" fill="#5A6470" font-size="11">[escalation]</text>
+
+  <!-- ============ RECON STRIP (right rail) ============ -->
+  <rect x="980" y="132" width="280" height="452" fill="#0B0E11" stroke="#1C2630" stroke-width="1"/>
+  <text x="996" y="154" fill="#FFB000" font-size="14">RECON — THE LINE</text>
+  <!-- next car (full) -->
+  <rect x="996" y="166" width="248" height="118" fill="#10161B" stroke="#3FC6D4" stroke-width="1.5"/>
+  <text x="1008" y="186" fill="#3FC6D4" font-size="13">NEXT ▸ CAR 08 — AQUARIUM</text>
+  <text x="1008" y="208" fill="#7EC8E3" font-size="12">TYPE: FLOOD / DESTRUCTIBLE</text>
+  <text x="1008" y="226" fill="#E0432E" font-size="12">THREAT: 4 GUARDS · 1 NET</text>
+  <text x="1008" y="244" fill="#C2A03A" font-size="12">HAZARD: WATER · ELECTRIFY</text>
+  <text x="1008" y="262" fill="#5FB89A" font-size="12">MOD: LOOSE CARGO (+)</text>
+  <text x="1008" y="278" fill="#9AA3AD" font-size="12">REWARD: SCRIP · TOOLS</text>
+  <!-- car after (partial silhouette) -->
+  <rect x="996" y="296" width="248" height="78" fill="#10161B" stroke="#2A3038" stroke-width="1"/>
+  <text x="1008" y="316" fill="#5A6470" font-size="13">+2 ▸ CAR 09 — [SILHOUETTE]</text>
+  <text x="1008" y="336" fill="#5A6470" font-size="12">TYPE: BOURGEOIS LOUNGE</text>
+  <text x="1008" y="354" fill="#5A6470" font-size="12">THREAT TAG: ? · ? · ?</text>
+  <!-- deep scan button -->
+  <rect x="996" y="388" width="248" height="40" fill="#14202A" stroke="#3FC6D4" stroke-width="1.5"/>
+  <text x="1120" y="413" fill="#3FC6D4" font-size="14" text-anchor="middle">▼ DEEP SCAN  (−2 TOOLS)</text>
+  <text x="996" y="452" fill="#5A6470" font-size="11">LINE IS FIXED — prepare, don't route.</text>
+
+  <!-- ============ COMMS LOG (bottom-left) ============ -->
+  <rect x="20" y="592" width="600" height="108" fill="#0B0E11" stroke="#1C2630" stroke-width="1"/>
+  <text x="34" y="612" fill="#FFB000" font-size="13">COMMS</text>
+  <text x="34" y="634" fill="#3FC6D4" font-size="12">&gt; OPERATOR: BRUISER, shove the guard east.</text>
+  <text x="34" y="652" fill="#B8895A" font-size="12">&gt; BRUISER: copy. moving.</text>
+  <text x="34" y="670" fill="#FF3B3B" font-size="12">! CONTACT — tank breached, FLOOD spreading.</text>
+  <text x="34" y="688" fill="#FFE14D" font-size="12">⚡ junction LIVE — soaked targets SHOCKED.</text>
+
+  <!-- ============ AP / ORDER STRIP (bottom-center) ============ -->
+  <rect x="632" y="592" width="328" height="108" fill="#0B0E11" stroke="#1C2630" stroke-width="1"/>
+  <text x="646" y="612" fill="#FFB000" font-size="13">BRUISER · AP</text>
+  <!-- AP pips -->
+  <circle cx="760" cy="608" r="7" fill="#3FC6D4" stroke="#0B0E11" stroke-width="1.5"/>
+  <circle cx="782" cy="608" r="7" fill="#2A3038" stroke="#3FC6D4" stroke-width="1.5"/>
+  <!-- order buttons -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="646" y="624" width="68" height="28" fill="#14202A" stroke="#2A3038"/><text x="680" y="642" fill="#3FC6D4">MOVE</text>
+    <rect x="720" y="624" width="68" height="28" fill="#14202A" stroke="#2A3038"/><text x="754" y="642" fill="#3FC6D4">SHOVE</text>
+    <rect x="794" y="624" width="68" height="28" fill="#14202A" stroke="#2A3038"/><text x="828" y="642" fill="#3FC6D4">SLAM</text>
+    <rect x="868" y="624" width="80" height="28" fill="#14202A" stroke="#2A3038"/><text x="908" y="642" fill="#3FC6D4">THROW</text>
+    <rect x="646" y="658" width="68" height="28" fill="#14202A" stroke="#2A3038"/><text x="680" y="676" fill="#3FC6D4">SHOOT</text>
+    <rect x="720" y="658" width="92" height="28" fill="#14202A" stroke="#2A3038"/><text x="766" y="676" fill="#3FC6D4">OVERWATCH</text>
+    <rect x="818" y="658" width="130" height="28" fill="#1A2E1A" stroke="#5FB89A"/><text x="883" y="676" fill="#5FB89A">✓ CONFIRM ORDER</text>
+  </g>
+
+  <!-- ============ SCANLINE + VIGNETTE OVERLAY (post pass, drawn last) ============ -->
+  <rect width="1280" height="720" fill="url(#scan)"/>
+  <rect width="1280" height="720" fill="url(#vig)"/>
+</svg>

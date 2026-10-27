@@ -1,0 +1,17 @@
+<svg viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- BRUISER draft portrait (W5-1). Larger character art layer (NOT the 64px board token).
+       Bible §3.5 player cyan wash + rust accent #C26A2A. Broad, heavy, front-heavy bruiser bust. -->
+  <rect x="0" y="0" width="140" height="180" fill="#0B0E11"/>
+  <rect x="0" y="0" width="140" height="180" fill="#2EA7E0" opacity="0.07"/>
+  <!-- massive shoulders / torso -->
+  <polygon points="70,74 116,96 120,180 20,180 24,96" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- neck -->
+  <rect x="58" y="60" width="24" height="20" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- heavy jaw head -->
+  <rect x="50" y="24" width="40" height="42" rx="8" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- brow bar -->
+  <rect x="52" y="36" width="36" height="7" fill="#C26A2A"/>
+  <!-- big fists crossed at chest (the displacement engine) -->
+  <rect x="40" y="120" width="26" height="26" rx="4" fill="#C26A2A" stroke="#0B0E11" stroke-width="3"/>
+  <rect x="74" y="120" width="26" height="26" rx="4" fill="#C26A2A" stroke="#0B0E11" stroke-width="3"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- FIRE LAYER (L_FIRE). Bible §3.3  #FF5A1F @75% over floor, flame tongues + embers -->
+  <defs>
+    <radialGradient id="fglow" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#FFB066"/>
+      <stop offset="60%" stop-color="#FF5A1F"/>
+      <stop offset="100%" stop-color="#7A2400"/>
+    </radialGradient>
+  </defs>
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <polygon points="64,1 127,32 64,63 1,32" fill="url(#fglow)" opacity="0.75"/>
+  <!-- flame tongues -->
+  <path d="M50,42 q-3,-14 6,-20 q-2,9 4,11 q3,-6 0,-13 q9,7 5,22 z" fill="#FFD08A" stroke="#FF5A1F" stroke-width="1"/>
+  <path d="M70,44 q-2,-10 5,-15 q-1,7 3,8 q2,-4 0,-9 q7,5 3,16 z" fill="#FF9248" stroke="#FF5A1F" stroke-width="1"/>
+  <circle cx="44" cy="24" r="1.6" fill="#FFD08A"/>
+  <circle cx="86" cy="28" r="1.4" fill="#FFB066"/>
+  <circle cx="74" cy="20" r="1.2" fill="#FFD08A"/>
+</svg>

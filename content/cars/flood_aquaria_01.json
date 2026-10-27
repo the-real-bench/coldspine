@@ -1,0 +1,38 @@
+{
+  "id": "flood_aquaria_01",
+  "name": "Aquaria Hold",
+  "type": "flood",
+  "section": 3,
+  "gridSize": { "w": 14, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 14, "h": 1 },
+      { "x": 0, "y": 7, "w": 14, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 13, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 4, "y": 4 },
+      { "object": "table", "x": 6, "y": 2 }
+    ],
+    "objects": [
+      { "object": "fish_tank_large", "x": 8, "y": 3 },
+      { "object": "fish_tank_large", "x": 8, "y": 5 },
+      { "object": "fish_tank_small", "x": 10, "y": 4 },
+      { "object": "junction_box", "x": 12, "y": 4, "isPowerSource": true }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 3 }, { "x": 1, "y": 5 }, { "x": 2, "y": 4 } ],
+      "enemy": [ { "x": 9, "y": 3 }, { "x": 9, "y": 5 }, { "x": 11, "y": 4 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 3 } },
+    { "enemy": "truncheon_guard", "at": { "x": 9, "y": 5 } },
+    { "enemy": "enforcer", "at": { "x": 11, "y": 4 } }
+  ],
+  "rewardTable": "reward_flood_s3",
+  "allowedModifiers": ["overpressure", "loose_cargo", "zero_stabilizer", "coolant_bank"],
+  "designNote": "MVP scenario (GDD §19): break a large tank -> wave knocks enemies Prone + Soaked -> shoot junction_box to electrify -> Shock chain. Winnable with zero gunfire by routing the flood + electrify."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "setpiece_hedge_maze",
+  "name": "Topiary Maze",
+  "type": "combat",
+  "section": 4,
+  "gridSize": { "w": 16, "h": 10 },
+  "reconTell": "TOPIARY MAZE",
+  "reconTags": ["LOW-VISIBILITY", "RIGGED"],
+  "inCarFog": true,
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "cover": [
+      { "object": "hedge_wall", "x": 4, "y": 1, "h": 4 },
+      { "object": "hedge_wall", "x": 4, "y": 6, "h": 3 },
+      { "object": "hedge_wall", "x": 8, "y": 2, "h": 5 },
+      { "object": "hedge_wall", "x": 11, "y": 1, "h": 3 },
+      { "object": "hedge_wall", "x": 11, "y": 6, "h": 3 }
+    ],
+    "objects": [
+      { "object": "hedge_sculpture", "x": 6, "y": 4, "rigged": "laser_grid" },
+      { "object": "hedge_sculpture", "x": 13, "y": 5, "rigged": "poison_gas" }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 5 } ],
+      "enemy": [ { "x": 13, "y": 2 }, { "x": 9, "y": 6 }, { "x": 13, "y": 8 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "hound", "at": { "x": 9, "y": 6 } },
+    { "enemy": "net_gunner", "at": { "x": 13, "y": 2 } },
+    { "enemy": "truncheon_guard", "at": { "x": 13, "y": 8 } }
+  ],
+  "betrayerHook": "conductors_kin",
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["flickering_lights", "lockdown"],
+  "designNote": "The premier betrayer car. In-car fog (E1.4) hides the defection. Burn/cut hedge walls to reshape the maze into a kill-funnel; rigged sculptures conceal cycling traps."
+}

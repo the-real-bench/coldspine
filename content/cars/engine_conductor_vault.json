@@ -1,0 +1,77 @@
+{
+  "id": "engine_conductor_vault",
+  "name": "The Engine Vault",
+  "type": "engine",
+  "section": 5,
+  "gridSize": { "w": 20, "h": 12 },
+  "isFinale": true,
+  "bridgeCountdown": 10,
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 20, "h": 1 },
+      { "x": 0, "y": 11, "w": 20, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 12 },
+      { "x": 19, "y": 0, "w": 1, "h": 12 },
+      { "x": 7, "y": 0, "w": 1, "h": 4, "note": "antechamber divider" },
+      { "x": 7, "y": 8, "w": 1, "h": 4 }
+    ],
+    "cover": [
+      { "object": "crate", "x": 3, "y": 4 },
+      { "object": "crate", "x": 4, "y": 7 },
+      { "object": "marble_statue", "x": 10, "y": 2 },
+      { "object": "marble_statue", "x": 10, "y": 9 }
+    ],
+    "objects": [
+      { "object": "coolant_tank", "x": 9, "y": 5, "note": "flood source for room-scale electrify + dais soak" },
+      { "object": "coolant_tank", "x": 15, "y": 7, "note": "off the plate bank (was 14,6 — it blocked a plate tile); flood radius 3 still reaches the plates" },
+      { "object": "junction_box", "x": 5, "y": 5, "isPowerSource": true }
+    ],
+    "objectives": [
+      { "id": "relay_a", "object": "relay", "power": "pistons", "x": 12, "y": 1, "integrity": 4, "onDestroy": ["remove_core_shield_stack", "disable_power:pistons", "freeze_bank:piston_lane"] },
+      { "id": "relay_b", "object": "relay", "power": "plates", "x": 16, "y": 1, "integrity": 4, "onDestroy": ["remove_core_shield_stack", "disable_power:plates", "freeze_bank:electrified_plate"] },
+      { "id": "relay_c", "object": "relay", "power": "dispensers", "x": 16, "y": 10, "integrity": 4, "onDestroy": ["remove_core_shield_stack", "disable_power:dispensers", "power_down:dispensers"] },
+      { "id": "dispenser_1", "object": "robot_dispenser", "x": 13, "y": 10, "integrity": 5, "spawns": "security_robot", "onDestroy": ["stop_spawns"] },
+      { "id": "dispenser_2", "object": "robot_dispenser", "x": 18, "y": 5, "integrity": 5, "spawns": "security_robot", "onDestroy": ["stop_spawns"] },
+      { "id": "core", "object": "engine_core", "x": 17, "y": 6, "integrity": 12, "shieldedWhile": "online_relays>0 OR conductor_alive", "onDestroy": ["trigger_ending"] },
+      { "id": "dais", "object": "control_dais", "x": 12, "y": 6, "anchored": true, "note": "Conductor stands here; flood to soak per B4. The Conductor's body shadows this tile's occupant_id (add_entity overwrites) — the engine finds the dais by entity id, never via occupant_at" }
+    ],
+    "hazards": [
+      { "hazard": "piston", "at": { "x": 2, "y": 2 }, "lane": [1, 0], "bank": "piston_lane" },
+      { "hazard": "piston", "at": { "x": 2, "y": 9 }, "lane": [1, 0], "bank": "piston_lane" },
+      { "hazard": "piston", "at": { "x": 11, "y": 4 }, "lane": [0, 1], "bank": "piston_lane" },
+      { "hazard": "electrified_plate", "at": { "x": 13, "y": 5 }, "bank": "electrified_plate" },
+      { "hazard": "electrified_plate", "at": { "x": 14, "y": 5 }, "bank": "electrified_plate" },
+      { "hazard": "electrified_plate", "at": { "x": 13, "y": 6 }, "bank": "electrified_plate" },
+      { "hazard": "electrified_plate", "at": { "x": 14, "y": 6 }, "bank": "electrified_plate" },
+      { "hazard": "steam_vent", "at": { "x": 9, "y": 8 } },
+      { "hazard": "steam_vent", "at": { "x": 15, "y": 3 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 5 }, { "x": 1, "y": 6 }, { "x": 2, "y": 5 }, { "x": 2, "y": 7 }, { "x": 1, "y": 4 } ],
+      "enemy": [ { "x": 12, "y": 6, "note": "Conductor on dais" }, { "x": 9, "y": 3 }, { "x": 10, "y": 8 } ],
+      "conductor": [ { "x": 12, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "sentry_turret", "at": { "x": 6, "y": 2 }, "note": "antechamber turret (Phase 1 fire)" },
+    { "enemy": "sentry_turret", "at": { "x": 6, "y": 9 } },
+    { "enemy": "captain_chief_of_security", "at": { "x": 9, "y": 3 }, "note": "antechamber elite (Phase 1)" },
+    { "enemy": "security_robot", "at": { "x": 10, "y": 8 }, "note": "off the steam vent at 9,8" }
+  ],
+  "phases": [
+    { "id": 1, "name": "Breach the Vault", "trigger": "start", "note": "antechamber under turret fire; hazards live; Conductor shielded + inactive; goal = cross + destroy Relay 1 + entry turrets" },
+    { "id": 2, "name": "The Conductor Active", "trigger": "cross_inner_vault_or_relay1_down", "note": "Conductor kit online; Bridge Countdown begins; Dispensers produce robots" },
+    { "id": 3, "name": "Core Exposed", "trigger": "all_relays_down_or_conductor_dead", "note": "Core shield drops; Conductor enrages (Lockdown); final push to Core integrity 0" }
+  ],
+  "endings": [
+    { "id": "hard_stop", "gate": "low_order AND core_sabotaged_before_countdown" },
+    { "id": "seize_the_engine", "gate": "low_order AND captured_not_killed_conductor AND survived" },
+    { "id": "pyrrhic", "gate": "high_order OR missed_countdown OR heavy_losses" },
+    { "id": "liberation", "gate": "low_order AND full_surviving_squad AND enough_citizens_recruited", "hidden": true },
+    { "id": "loss", "gate": "squad_wipe" }
+  ],
+  "rewardTable": "reward_finale",
+  "allowedModifiers": [],
+  "designNote": "Authored, not generated (B7). Core immune while any Relay online OR Conductor alive. Decapitation: Conductor unshovable_until_soaked — flood the dais then shove into a hazard. All physics runs on the Sub-Spec A resolver. The Conductor is deliberately NOT in enemySpawns[] — EngineVault._add_conductor instantiates it on the dais (authoring it here too would double-spawn it now that scripted spawns survive the finale build)."
+}

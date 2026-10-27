@@ -1,0 +1,126 @@
+{
+  "truncheon_strike": {
+    "id": "truncheon_strike",
+    "name": "Truncheon Strike",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 3 }
+    ]
+  },
+  "shield_bash": {
+    "id": "shield_bash",
+    "name": "Shield Bash",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 2 },
+      { "kind": "impulse", "force": 1 }
+    ]
+  },
+  "net_shot": {
+    "id": "net_shot",
+    "name": "Net Shot",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 5,
+    "effects": [
+      { "kind": "ranged_attack" },
+      { "kind": "status", "status": "suppressed" },
+      { "kind": "immobilize", "durationTurns": 1 }
+    ]
+  },
+  "enforcer_volley": {
+    "id": "enforcer_volley",
+    "name": "Enforcer Volley",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 6,
+    "effects": [
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 4 }
+    ]
+  },
+  "hound_pounce": {
+    "id": "hound_pounce",
+    "name": "Pounce",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 6,
+    "effects": [
+      { "kind": "move", "toAdjacent": true },
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 3 }
+    ]
+  },
+  "sniper_shot": {
+    "id": "sniper_shot",
+    "name": "Sniper Shot",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 12,
+    "effects": [
+      { "kind": "ranged_attack", "accuracyBonus": 20 },
+      { "kind": "damage", "amount": 6 }
+    ]
+  },
+  "sniper_overwatch": {
+    "id": "sniper_overwatch",
+    "name": "Sniper Overwatch",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "self",
+    "range": 12,
+    "effects": [
+      { "kind": "reaction", "trigger": "enemy_move_in_los" },
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 5 }
+    ]
+  },
+  "deploy_bot": {
+    "id": "deploy_bot",
+    "name": "Deploy Bot",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "tile",
+    "range": 4,
+    "effects": [
+      { "kind": "spawn_enemy", "enemy": "security_robot" }
+    ]
+  },
+  "robot_ram": {
+    "id": "robot_ram",
+    "name": "Ram",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 1,
+    "effects": [
+      { "kind": "melee_attack" },
+      { "kind": "damage", "amount": 4 },
+      { "kind": "impulse", "force": 2 }
+    ]
+  },
+  "turret_burst": {
+    "id": "turret_burst",
+    "name": "Turret Burst",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 7,
+    "effects": [
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 4 }
+    ]
+  }
+}

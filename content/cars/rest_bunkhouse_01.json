@@ -1,0 +1,32 @@
+{
+  "id": "rest_bunkhouse_01",
+  "name": "Bunkhouse Infirmary",
+  "type": "rest",
+  "section": 1,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "bench", "x": 5, "y": 3, "note": "cot row" },
+      { "object": "locker", "x": 8, "y": 2, "note": "medicine cabinet" }
+    ],
+    "objects": [
+      { "object": "oxygen_tank", "x": 9, "y": 5 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "restBeat": { "heal": true, "stabilize": true, "reviveChance": "scarce" },
+  "rewardTable": "reward_rest",
+  "allowedModifiers": [],
+  "designNote": "Tail-skin rest car (med_rest_01 clone) so Section 1 has a native REST deck entry — cots and a scavenged medicine cabinet instead of a med bay."
+}

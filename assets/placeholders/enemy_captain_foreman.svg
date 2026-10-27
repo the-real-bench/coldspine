@@ -1,0 +1,19 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- CAPTAIN: The Foreman (S2) — kill_to_drop_guard_buff. Key tell = BUFF AURA (gold). Support. -->
+  <circle cx="48" cy="48" r="44" fill="#E0432E" opacity="0.16"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#E0432E" stroke-width="4"/>
+  <circle cx="48" cy="48" r="38" fill="none" stroke="#E0432E" stroke-width="2" opacity="0.7"/>
+  <!-- buff aura (radiating dashed gold ring = the 'kill to drop' tell) -->
+  <circle cx="48" cy="50" r="30" fill="none" stroke="#FFE14D" stroke-width="2" stroke-dasharray="4 5" opacity="0.8"/>
+  <!-- body + hard hat -->
+  <polygon points="48,28 68,40 66,70 30,70 28,40" fill="#3A2E2E" stroke="#0B0E11" stroke-width="2.5"/>
+  <circle cx="48" cy="34" r="10" fill="#3A2E2E" stroke="#0B0E11" stroke-width="2"/>
+  <path d="M36 32 q12 -12 24 0 Z" fill="#C9A24A" stroke="#0B0E11" stroke-width="2"/>
+  <!-- wrench (right) -->
+  <rect x="66" y="42" width="6" height="22" rx="2" transform="rotate(18 69 53)" fill="#8A8A92" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- gold rank -->
+  <polygon points="48,48 60,56 48,54 36,56" fill="#C9A24A" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- BUFF key mote -->
+  <circle cx="72" cy="22" r="7" fill="#FFE14D" stroke="#0B0E11" stroke-width="1.5"/>
+  <path d="M72 18 v8 M68 22 h8" stroke="#0B0E11" stroke-width="2"/>
+</svg>

@@ -1,0 +1,114 @@
+{
+  "aimed_shot": {
+    "id": "aimed_shot",
+    "name": "Aimed Shot",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 8,
+    "effects": [
+      { "kind": "ranged_attack", "accuracyBonus": 15 },
+      { "kind": "damage", "amount": 4 }
+    ]
+  },
+  "overwatch": {
+    "id": "overwatch",
+    "name": "Overwatch",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "self",
+    "range": 8,
+    "effects": [
+      { "kind": "reaction", "trigger": "enemy_move_in_los" },
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 3 }
+    ]
+  },
+  "opportunist": {
+    "id": "opportunist",
+    "name": "Opportunist",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "damage_bonus_vs_status", "status": ["prone", "soaked"], "amount": 3 },
+      { "kind": "damage_bonus_vs_flank", "amount": 3 }
+    ]
+  },
+  "steady": {
+    "id": "steady",
+    "name": "Steady",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "no_end_turn_first_shot", "requires": "did_not_move" }
+    ]
+  },
+  "lattice": {
+    "id": "lattice",
+    "name": "Lattice",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "direction",
+    "range": 8,
+    "effects": [
+      { "kind": "reaction", "trigger": "enemy_move_in_cone", "cone": 3 },
+      { "kind": "ranged_attack", "maxTargets": 3 },
+      { "kind": "damage", "amount": 3 }
+    ]
+  },
+  "pierce": {
+    "id": "pierce",
+    "name": "Pierce",
+    "apCost": 0,
+    "endsTurn": false,
+    "targeting": "self",
+    "range": 0,
+    "effects": [
+      { "kind": "ignore_cover", "coverLevel": 1 }
+    ]
+  },
+  "killzone": {
+    "id": "killzone",
+    "name": "Killzone",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "direction",
+    "range": 8,
+    "effects": [
+      { "kind": "reaction", "trigger": "any_enemy_action_in_cone", "cone": 3 },
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 3 }
+    ]
+  },
+  "soaked_spark": {
+    "id": "soaked_spark",
+    "name": "Soaked-Spark",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 8,
+    "effects": [
+      { "kind": "ranged_attack" },
+      { "kind": "damage", "amount": 4 },
+      { "kind": "electrify", "requires_target_status": "soaked", "force": 0 },
+      { "kind": "status", "status": "shocked", "requires_target_status": "soaked" }
+    ]
+  },
+  "deadeye": {
+    "id": "deadeye",
+    "name": "Deadeye",
+    "apCost": 1,
+    "endsTurn": true,
+    "targeting": "enemy",
+    "range": 10,
+    "cooldown": 4,
+    "effects": [
+      { "kind": "ranged_attack", "guaranteedHit": true },
+      { "kind": "damage", "amount": 7 }
+    ]
+  }
+}

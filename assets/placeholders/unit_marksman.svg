@@ -1,0 +1,12 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- MARKSMAN (player). Bible §3.5 cyan ring #2EA7E0 + green accent #5FA86A. Slim, long rifle line. -->
+  <circle cx="48" cy="48" r="44" fill="#2EA7E0" opacity="0.18"/>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="#2EA7E0" stroke-width="4"/>
+  <!-- slim body -->
+  <ellipse cx="44" cy="50" rx="14" ry="22" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="44" cy="34" r="9" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- long diagonal rifle -->
+  <rect x="30" y="44" width="46" height="5" rx="1" transform="rotate(-24 53 46)" fill="#5FA86A" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- scope dot -->
+  <circle cx="70" cy="34" r="3.5" fill="#5FA86A" stroke="#0B0E11" stroke-width="1.5"/>
+</svg>

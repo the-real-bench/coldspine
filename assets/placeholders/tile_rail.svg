@@ -1,0 +1,12 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- LIVE RAIL (Hazard.RAIL_LIVE) — electrified. Bible §3.2  #FFE14D on #2A2A12, zigzag bolt + arcs -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <!-- dark rail band across the diamond -->
+  <polygon points="32,16 96,48 96,40 32,8" fill="#2A2A12" stroke="#0B0E11" stroke-width="1.5"/>
+  <polygon points="32,48 96,16 96,24 32,56" fill="#2A2A12" stroke="#0B0E11" stroke-width="1.5"/>
+  <!-- zigzag live bolt -->
+  <polyline points="20,32 36,24 46,36 60,24 72,36 86,24 100,33" fill="none" stroke="#FFE14D" stroke-width="3"/>
+  <polyline points="20,32 36,24 46,36 60,24 72,36 86,24 100,33" fill="none" stroke="#FFF6C2" stroke-width="1"/>
+  <circle cx="46" cy="36" r="2" fill="#FFF6C2"/>
+  <circle cx="72" cy="36" r="2" fill="#FFF6C2"/>
+</svg>

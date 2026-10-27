@@ -1,0 +1,51 @@
+{
+  "id": "setpiece_server_hub",
+  "name": "Server / Control Hub",
+  "type": "combat",
+  "section": 4,
+  "reconTell": "CONTROL HUB",
+  "reconTags": ["SHOCK", "ROBOTS", "COLD"],
+  "gridSize": { "w": 16, "h": 10 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1 },
+      { "x": 0, "y": 9, "w": 16, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 10 },
+      { "x": 15, "y": 0, "w": 1, "h": 10 }
+    ],
+    "tileFields": [
+      { "region": { "x": 1, "y": 1, "w": 14, "h": 8 }, "status": "chilled", "note": "server-cooled cold air" }
+    ],
+    "cover": [
+      { "object": "locker", "x": 5, "y": 3, "note": "server rack" },
+      { "object": "locker", "x": 5, "y": 6 },
+      { "object": "locker", "x": 9, "y": 4 },
+      { "object": "locker", "x": 9, "y": 7 }
+    ],
+    "objects": [
+      { "object": "junction_box", "x": 12, "y": 3, "isPowerSource": true },
+      { "object": "junction_box", "x": 12, "y": 7, "isPowerSource": true }
+    ],
+    "hazards": [
+      { "hazard": "electrified_plate", "at": { "x": 7, "y": 4 } },
+      { "hazard": "electrified_plate", "at": { "x": 7, "y": 5 } },
+      { "hazard": "electrified_plate", "at": { "x": 8, "y": 4 } },
+      { "hazard": "electrified_plate", "at": { "x": 8, "y": 5 } },
+      { "hazard": "laser_sweep", "at": { "x": 14, "y": 3 }, "note": "server-row security sweep" },
+      { "hazard": "laser_sweep", "at": { "x": 14, "y": 7 } }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 1, "y": 5 }, { "x": 2, "y": 6 } ],
+      "enemy": [ { "x": 13, "y": 4 }, { "x": 13, "y": 6 }, { "x": 11, "y": 5 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "security_robot", "at": { "x": 13, "y": 4 } },
+    { "enemy": "drone_operator", "at": { "x": 11, "y": 5 } },
+    { "enemy": "sentry_turret", "at": { "x": 13, "y": 6 } }
+  ],
+  "rewardTable": "reward_setpiece_s4",
+  "allowedModifiers": ["live_rails", "lockdown", "flickering_lights"],
+  "designNote": "Tech combat — hack to disable hazards in the next car; electrified floor plates plus a laser sweep along the rear server row. Herd robots onto plates; Saboteur converts bots."
+}

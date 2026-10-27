@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- BURIED (S_BURIED) #8A7C64 — caught by an avalanche, immobilized 1 turn (E1.6) -->
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="#8A7C64" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="12" cy="9" r="2.4" fill="#F2F4F6" stroke="#0B0E11" stroke-width="1"/>
+  <path d="M4 19 L12 11 L20 19 Z" fill="#F2F4F6" stroke="#0B0E11" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

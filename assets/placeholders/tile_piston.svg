@@ -1,0 +1,13 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- PISTON (Hazard.PISTON) — crush. Bible §3.2  steel #9AA3AD / warn #FF3B3B, down-slam arrows + ring -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <!-- armed warning ring -->
+  <polygon points="64,10 112,32 64,54 16,32" fill="none" stroke="#FF3B3B" stroke-width="2" opacity="0.85"/>
+  <!-- steel piston plate -->
+  <polygon points="64,20 94,32 64,44 34,32" fill="#9AA3AD" stroke="#0B0E11" stroke-width="1.5"/>
+  <polygon points="64,24 84,32 64,40 44,32" fill="#5A6470" stroke="#0B0E11" stroke-width="1"/>
+  <!-- down-slam arrows -->
+  <polygon points="64,14 70,21 66,21 66,26 62,26 62,21 58,21" fill="#FF3B3B"/>
+  <polygon points="40,30 46,37 42,37 42,42 38,42 38,37 34,37" fill="#FF3B3B" opacity="0.8"/>
+  <polygon points="88,30 94,37 90,37 90,42 86,42 86,37 82,37" fill="#FF3B3B" opacity="0.8"/>
+</svg>

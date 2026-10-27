@@ -1,0 +1,42 @@
+{
+  "id": "setpiece_ice_rink",
+  "name": "Ice Rink",
+  "type": "combat",
+  "section": 3,
+  "gridSize": { "w": 16, "h": 10 },
+  "reconTell": "ICE RINK",
+  "reconTags": ["ICE"],
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 16, "h": 1, "note": "boards (anchored hard cover)" },
+      { "x": 0, "y": 9, "w": 16, "h": 1, "note": "boards" },
+      { "x": 0, "y": 0, "w": 1, "h": 10, "note": "boards" },
+      { "x": 15, "y": 0, "w": 1, "h": 10, "note": "boards" }
+    ],
+    "tileFields": [
+      { "region": { "x": 1, "y": 1, "w": 14, "h": 8 }, "friction": 0, "note": "frictionless ice — slides go full length" }
+    ],
+    "cover": [
+      { "object": "bench", "x": 3, "y": 1 },
+      { "object": "bench", "x": 12, "y": 8 }
+    ],
+    "objects": [
+      { "object": "thin_ice", "x": 7, "y": 4 },
+      { "object": "thin_ice", "x": 8, "y": 4 },
+      { "object": "thin_ice", "x": 7, "y": 5 },
+      { "object": "thin_ice", "x": 8, "y": 5 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 2, "y": 4 }, { "x": 2, "y": 5 }, { "x": 1, "y": 4 } ],
+      "enemy": [ { "x": 12, "y": 3 }, { "x": 13, "y": 5 }, { "x": 12, "y": 6 } ]
+    }
+  },
+  "enemySpawns": [
+    { "enemy": "truncheon_guard", "at": { "x": 12, "y": 3 } },
+    { "enemy": "riot_shield", "at": { "x": 13, "y": 5 } },
+    { "enemy": "hound", "at": { "x": 12, "y": 6 } }
+  ],
+  "rewardTable": "reward_setpiece_s3",
+  "allowedModifiers": ["open_roof", "zero_stabilizer", "flickering_lights"]
+}

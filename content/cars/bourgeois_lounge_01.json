@@ -1,0 +1,33 @@
+{
+  "id": "bourgeois_lounge_01",
+  "name": "Bourgeois Lounge",
+  "type": "bourgeois",
+  "section": 3,
+  "gridSize": { "w": 12, "h": 8 },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      { "x": 0, "y": 0, "w": 12, "h": 1 },
+      { "x": 0, "y": 7, "w": 12, "h": 1 },
+      { "x": 0, "y": 0, "w": 1, "h": 8 },
+      { "x": 11, "y": 0, "w": 1, "h": 8 }
+    ],
+    "cover": [
+      { "object": "table", "x": 5, "y": 3 },
+      { "object": "table", "x": 7, "y": 4 },
+      { "object": "chair", "x": 6, "y": 3 }
+    ],
+    "objects": [
+      { "object": "glass_partition", "x": 9, "y": 2, "w": 1, "h": 4 }
+    ],
+    "spawnPoints": {
+      "player": [ { "x": 1, "y": 4 }, { "x": 2, "y": 4 } ],
+      "civilian": [ { "x": 6, "y": 4 }, { "x": 8, "y": 3 } ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "moralBeat": { "spare": "gear_intel_buff", "kill": "instant_scrip_plus_order" },
+  "rewardTable": "reward_bourgeois",
+  "allowedModifiers": ["flickering_lights"]
+}

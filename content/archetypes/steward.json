@@ -1,0 +1,15 @@
+{
+  "id": "steward",
+  "name": "Steward",
+  "role": "support",
+  "baseStats": { "hp": 9, "move": 5, "accuracy": 50, "mass": "light" },
+  "innateTrait": null,
+  "startingAbilities": ["stabilize", "patch", "cleanse"],
+  "abilityTree": [
+    ["field_medic", "adrenaline"],
+    ["rebreather_kit", "triage"],
+    ["rally_banner", "last_stand"]
+  ],
+  "capstone": "guardian_protocol",
+  "traitAffinity": ["inspiring", "loyal", "iron_lungs", "merciful"]
+}

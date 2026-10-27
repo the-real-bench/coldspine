@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- STEWARD draft portrait (W5-1). Character art layer (NOT the 64px board token).
+       Bible §3.5 player cyan wash + teal accent #7EC8E3. Calm, upright, medic cross. -->
+  <rect x="0" y="0" width="140" height="180" fill="#0B0E11"/>
+  <rect x="0" y="0" width="140" height="180" fill="#2EA7E0" opacity="0.07"/>
+  <!-- steady shoulders / torso -->
+  <polygon points="70,78 104,98 106,180 34,180 36,98" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- neck -->
+  <rect x="60" y="64" width="20" height="18" fill="#2A3038" stroke="#0B0E11" stroke-width="2"/>
+  <!-- head -->
+  <circle cx="70" cy="44" r="21" fill="#2A3038" stroke="#0B0E11" stroke-width="3"/>
+  <!-- medic cross on chest -->
+  <rect x="63" y="116" width="14" height="40" rx="2" fill="#7EC8E3" stroke="#0B0E11" stroke-width="2"/>
+  <rect x="50" y="129" width="40" height="14" rx="2" fill="#7EC8E3" stroke="#0B0E11" stroke-width="2"/>
+</svg>

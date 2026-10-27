@@ -1,0 +1,84 @@
+{
+  "id": "event_wounded_loyalist",
+  "name": "Wounded Loyalist",
+  "type": "event",
+  "section": 4,
+  "gridSize": {
+    "w": 12,
+    "h": 8
+  },
+  "layout": {
+    "terrain": "floor",
+    "walls": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "w": 12,
+        "h": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "w": 1,
+        "h": 8
+      }
+    ],
+    "cover": [],
+    "objects": [
+      {
+        "object": "bench",
+        "x": 6,
+        "y": 4
+      }
+    ],
+    "spawnPoints": {
+      "player": [
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        }
+      ],
+      "enemy": []
+    }
+  },
+  "enemySpawns": [],
+  "eventBeat": {
+    "style": "ftl_branching_text",
+    "prompt": "A wounded loyalist, left behind by the retreating guards, offers hard-won advice in exchange for mercy.",
+    "options": [
+      {
+        "id": "slip",
+        "label": "[ SLIP PAST ]",
+        "outcome": "resource",
+        "kind": "tools",
+        "amount": 1,
+        "consequence": "+1 tools, hands clean"
+      },
+      {
+        "id": "aid",
+        "label": "[ HEAR HIM OUT ]",
+        "outcome": "trait_gain",
+        "trait": "hardened",
+        "consequence": "he drills the cell \u2014 a member gains Hardened (first-hit soak)"
+      }
+    ]
+  },
+  "rewardTable": "reward_event",
+  "allowedModifiers": []
+}

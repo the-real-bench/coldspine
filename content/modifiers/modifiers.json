@@ -1,0 +1,107 @@
+{
+  "_schema": "ModifierDef per GDD §21. polarity: positive|negative. effects[] use the EffectDef pipeline. Rolled per car, visible in recon (§8.2).",
+  "modifiers": [
+    {
+      "id": "cramped",
+      "name": "Cramped",
+      "polarity": "negative",
+      "effects": [ { "kind": "move_mod", "amount": -1, "scope": "all" } ]
+    },
+    {
+      "id": "flickering_lights",
+      "name": "Flickering Lights",
+      "polarity": "negative",
+      "effects": [ { "kind": "sight_mod", "amount": -2 }, { "kind": "ambush_risk", "amount": 1 } ]
+    },
+    {
+      "id": "steam_vents",
+      "name": "Steam Vents",
+      "polarity": "negative",
+      "effects": [ { "kind": "seed_hazard", "hazard": "steam_vent", "count": 3 } ]
+    },
+    {
+      "id": "open_roof",
+      "name": "Open Roof",
+      "polarity": "negative",
+      "effects": [ { "kind": "dot_each_turn", "damageType": "cold", "amount": 1, "scope": "all" }, { "kind": "status_each_turn", "status": "chilled", "scope": "all" } ]
+    },
+    {
+      "id": "lockdown",
+      "name": "Lockdown",
+      "polarity": "negative",
+      "effects": [ { "kind": "timed_reinforcements", "everyTurns": 3 } ]
+    },
+    {
+      "id": "overpressure",
+      "name": "Overpressure",
+      "polarity": "negative",
+      "effects": [ { "kind": "destructible_break_triggers", "hazard": "flood", "floodRadius": 2 } ]
+    },
+    {
+      "id": "sealed_bulkheads",
+      "name": "Sealed Bulkheads",
+      "polarity": "negative",
+      "effects": [ { "kind": "destructible_count_mod", "amount_pct": -50 } ]
+    },
+    {
+      "id": "loose_cargo",
+      "name": "Loose Cargo",
+      "polarity": "positive",
+      "effects": [ { "kind": "extra_movable_objects", "count": 4 } ]
+    },
+    {
+      "id": "sympathizers",
+      "name": "Sympathizers",
+      "polarity": "positive",
+      "effects": [ { "kind": "spawn_ally", "faction": "neutral_assist", "count": 1 } ]
+    },
+    {
+      "id": "sabotaged_security",
+      "name": "Sabotaged Security",
+      "polarity": "positive",
+      "effects": [ { "kind": "enemy_cover_mod", "amount": -1, "scope": "enemies" } ]
+    },
+    {
+      "id": "supply_drop",
+      "name": "Supply Drop",
+      "polarity": "positive",
+      "effects": [ { "kind": "field_consumables", "count": 2 } ]
+    },
+    {
+      "id": "zero_stabilizer",
+      "name": "Zero-Stabilizer Section",
+      "polarity": "positive",
+      "effects": [ { "kind": "displacement_mult", "value": 2 } ]
+    },
+    {
+      "id": "gas_leak",
+      "name": "Gas Leak",
+      "polarity": "negative",
+      "effects": [ { "kind": "seed_hazard", "hazard": "poison_gas", "count": 1, "withSource": "gas_main" } ]
+    },
+    {
+      "id": "laser_sec_grid",
+      "name": "Laser Sec-Grid",
+      "polarity": "negative",
+      "effects": [ { "kind": "seed_hazard", "hazard": "laser_grid", "count": 2 } ]
+    },
+    {
+      "id": "furnace_row",
+      "name": "Furnace Row",
+      "polarity": "negative",
+      "effects": [ { "kind": "seed_hazard", "hazard": "furnace", "count": 3 } ]
+    },
+    {
+      "id": "coolant_bank",
+      "name": "Coolant Bank",
+      "polarity": "positive",
+      "effects": [ { "kind": "extra_movable_objects", "object": "coolant_tank", "count": 2 } ]
+    },
+    {
+      "id": "live_rails",
+      "name": "Live Rails",
+      "polarity": "negative",
+      "effects": [ { "kind": "seed_hazard", "hazard": "live_rail", "count": 2 } ]
+    }
+  ]
+}

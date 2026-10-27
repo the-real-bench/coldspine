@@ -1,0 +1,8 @@
+<svg viewBox="0 0 128 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- LASER SWEEP (Hazard.LASER_SWEEP) — an arc that steps around each cycle (D2.2). ALERT_RED. -->
+  <polygon points="64,1 127,32 64,63 1,32" fill="#3A4048" stroke="#0B0E11" stroke-width="2"/>
+  <circle cx="64" cy="50" r="4" fill="#5A6470" stroke="#0B0E11" stroke-width="1"/>
+  <path d="M30,40 A 40 40 0 0 1 98,40" fill="none" stroke="#FF3B3B" stroke-width="2" stroke-dasharray="4 4" opacity="0.8"/>
+  <line x1="64" y1="50" x2="92" y2="24" stroke="#FF3B3B" stroke-width="2"/>
+  <circle cx="92" cy="24" r="2.5" fill="#E8FBFF"/>
+</svg>
